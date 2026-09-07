@@ -112,7 +112,7 @@ input,.scheda h2,.scheda .dove,.premio{user-select:text;-webkit-user-select:text
 
 /* --- impaginazione --- */
 #scena{position:fixed;inset:0;z-index:1}
-#tela{position:absolute;inset:0;left:var(--sinistra,0);touch-action:none;cursor:grab}
+#tela{position:absolute;inset:0;touch-action:none;cursor:grab}
 #tela.trascino,#tela.trascino *{cursor:grabbing}
 svg#mappa{width:100%;height:100%;display:block}
 
@@ -197,7 +197,9 @@ select.regione option{background:var(--tendina);color:var(--testo)}
 .fumetto{
   position:absolute;z-index:6;padding:7px 12px;pointer-events:none;
   font-size:12.5px;white-space:nowrap;opacity:0;
-  transform:translate(-50%,-152%);transition:opacity .12s;border-radius:13px;
+  /* Distanza fissa dal pin invece di una percentuale dell'altezza: con
+     due righe di testo il -152% lo mandava una ventina di pixel piu' su. */
+  transform:translate(-50%,calc(-100% - 11px));transition:opacity .12s;border-radius:13px;
 }
 .fumetto.viva{opacity:1}
 .fumetto .luogo{color:var(--testo-tenue);font-size:11.5px}
@@ -276,8 +278,6 @@ select.regione option{background:var(--tendina);color:var(--testo)}
   }
   .gruppo .quanti{margin-left:3px}
   .conteggio{margin-top:10px;padding-top:9px}
-  /* la mappa si ferma sopra al pannello, altrimenti la Sicilia resta sotto */
-  #tela{bottom:var(--sotto,300px)}
   .scheda{left:10px !important;right:10px;top:10px !important;width:auto}
   .comandi{right:10px;bottom:auto;top:50%;transform:translateY(-50%)}
   .etichetta{display:none}
@@ -378,6 +378,7 @@ let gRadice, gTerra, gSpilli, alone, regolaRaggio;
 let riquadri = {};                // riquadro di ogni regione, per l'inquadratura
 let regioneInquadrata = null;     // per far tornare indietro il secondo click
 let ultimoClickRegione = 0;
+let spostatoAMano = false;        // dopo uno spostamento a mano non si reinquadra
 
 /* ------------------------------------------------------------------ */
 /* avvio                                                               */
@@ -493,7 +494,6 @@ function disegna() {
 
   misuraRegioni();
   riempiRegioni();
-  spazioSotto();
   aggiornaConteggi();
   inquadra(riquadri[''], 0.94);   // un filo di margine sui bordi
   collega();
@@ -550,16 +550,6 @@ function fattoreSchermo() {
   return f > 0 ? f : 1;      // finestra nascosta: meglio 1 che una divisione per zero
 }
 
-/** Quanta mappa ci sta davvero nella finestra, in unita' del viewBox.
-    Con preserveAspectRatio="meet" una delle due misure e' piu' grande del
-    viewBox: se non se ne tiene conto, una regione inquadrata resta piccola
-    invece di riempire lo spazio. */
-function estensioneVisibile() {
-  const r = svg.getBoundingClientRect();
-  const f = fattoreSchermo();
-  return {w: r.width / f, h: r.height / f};
-}
-
 /** Coordinate del viewBox a partire da un punto dello schermo. */
 function versoMappa(cx, cy) {
   const r = svg.getBoundingClientRect();
@@ -569,9 +559,20 @@ function versoMappa(cx, cy) {
   return {x: (cx - r.left - ox) / f, y: (cy - r.top - oy) / f};
 }
 
+/** Lo zoom piu' basso consentito: quello che fa entrare tutta l'Italia
+    nello spazio libero. Era un numero fisso (0,9), e su finestre strette
+    vinceva lui sull'inquadratura: la mappa restava piu' grande dello spazio
+    e usciva dai bordi. */
+function scalaMinima() {
+  const a = areaUtile(), f = fattoreSchermo();
+  return 0.85 * Math.min((a.x1 - a.x0) / f / mappa.w,
+                         (a.y1 - a.y0) / f / mappa.h);
+}
+
 function zooma(fattore, cx, cy) {
   if (!isFinite(fattore) || fattore <= 0) return;
-  const k2 = Math.max(0.9, Math.min(40, vista.k * fattore));
+  spostatoAMano = true;
+  const k2 = Math.max(scalaMinima(), Math.min(40, vista.k * fattore));
   const f = k2 / vista.k;
   const p = versoMappa(cx, cy);
   vista.x = p.x - (p.x - vista.x) * f;
@@ -582,12 +583,17 @@ function zooma(fattore, cx, cy) {
 
 function inquadra(r, margine) {
   const m = margine === undefined ? 0.86 : margine;
-  const v = estensioneVisibile();
-  const k = Math.max(0.9, Math.min(40, m * Math.min(v.w / (r.x1 - r.x0),
-                                                    v.h / (r.y1 - r.y0))));
+  const a = areaUtile();
+  const f = fattoreSchermo();
+  const larga = (a.x1 - a.x0) / f, alta = (a.y1 - a.y0) / f;   // in unita' del viewBox
+  const k = Math.max(scalaMinima(), Math.min(40, m * Math.min(larga / (r.x1 - r.x0),
+                                                              alta / (r.y1 - r.y0))));
+  // il centro dell'area libera, in coordinate del viewBox
+  const c = versoMappa((a.x0 + a.x1) / 2, (a.y0 + a.y1) / 2);
   vista.k = k;
-  vista.x = mappa.w / 2 - k * (r.x0 + r.x1) / 2;
-  vista.y = mappa.h / 2 - k * (r.y0 + r.y1) / 2;
+  vista.x = c.x - k * (r.x0 + r.x1) / 2;
+  vista.y = c.y - k * (r.y0 + r.y1) / 2;
+  spostatoAMano = false;
   applicaVista();
 }
 
@@ -772,7 +778,7 @@ function collega() {
     // solo pixel di tremolio della mano ne vale tre, e ogni click un po'
     // impreciso veniva scambiato per un trascinamento.
     const sx = e.clientX - giu.x, sy = e.clientY - giu.y;
-    if (Math.abs(sx) + Math.abs(sy) > 5) mosso = true;
+    if (Math.abs(sx) + Math.abs(sy) > 5) { mosso = true; spostatoAMano = true; }
     const f = fattoreSchermo();
     vista.x = giu.vx + sx / f;
     vista.y = giu.vy + sy / f;
@@ -896,20 +902,33 @@ function collega() {
     if (scelto) chiudiScheda();
     else tuttaItalia();
   });
-  // prima lo spazio, poi il raggio: spazioSotto cambia la larghezza della
-  // mappa, e il raggio dipende da quella
-  window.addEventListener('resize',
-    () => { spazioSotto(); regolaRaggio(vista.k); posizionaScheda(); });
+  // Ridimensionando la finestra la vista restava com'era e la mappa finiva
+  // fuori: se non ci si e' spostati a mano, si reinquadra.
+  window.addEventListener('resize', () => {
+    regolaRaggio(vista.k);
+    posizionaScheda();
+    if (!spostatoAMano) inquadra(riquadri[regioneInquadrata || ''],
+                                 regioneInquadrata ? 0.92 : 0.94);
+  });
 }
 
-/** La mappa non deve finire sotto al pannello: di lato su schermo largo,
-    sopra al pannello su schermo stretto. */
-function spazioSotto() {
-  const t = document.querySelector('.testata');
+/** La parte di finestra libera dal pannello, in pixel di schermo.
+
+    Prima l'ingombro del pannello lo toglievo alla tela, ma cosi' la mappa
+    veniva tagliata di netto su quel bordo appena la si spostava. La tela
+    resta grande quanto la finestra e l'ingombro si tiene in conto solo qui,
+    quando si decide l'inquadratura. */
+function areaUtile() {
+  const r = svg.getBoundingClientRect();
+  const p = document.querySelector('.testata').getBoundingClientRect();
   const stretto = window.innerWidth <= 820;
-  const r = document.documentElement.style;
-  r.setProperty('--sotto', (t.offsetHeight + 20) + 'px');
-  r.setProperty('--sinistra', stretto ? '0px' : (t.offsetWidth + 44) + 'px');
+  const m = 16;
+  return {
+    x0: stretto ? r.left : Math.min(p.right + m, r.right - 240),
+    x1: r.right,
+    y0: r.top,
+    y1: stretto ? Math.max(p.top - m, r.top + 240) : r.bottom,
+  };
 }
 
 function tuttaItalia() {
