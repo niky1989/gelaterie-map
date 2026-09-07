@@ -1,0 +1,15 @@
+# Mappa delle gelaterie premiate dalla guida Gelaterie d'Italia 2027 del
+# Gambero Rosso. Sito statico, nessuna chiamata verso l'esterno.
+#
+# In Portainer: Stacks -> Add stack -> Repository, e si incolla l'indirizzo
+# di questo repository. Da li' in poi si aggiorna col pulsante
+# "Pull and redeploy": niente piu' testo da incollare.
+
+services:
+  gelaterie:
+    build: .
+    container_name: mappa-gelaterie
+    ports:
+      # Cambiare solo il numero a sinistra se la 8092 e' gia' occupata.
+      - "8092:80"
+    restart: unless-stopped

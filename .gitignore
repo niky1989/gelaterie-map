@@ -1,0 +1,9 @@
+# 5 MB, e serve solo per rigenerare mappa.json. Portainer scarica tutto il
+# repository a ogni aggiornamento: meglio tenerlo leggero.
+# Si riprende con:
+#   curl -o data/provinces.geojson https://raw.githubusercontent.com/openpolis/geojson-italy/master/geojson/limits_IT_provinces.geojson
+data/provinces.geojson
+data/sospetti.txt
+__pycache__/
+*.pyc
+.DS_Store

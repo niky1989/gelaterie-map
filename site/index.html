@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gelaterie d'Italia 2027</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --fondo:#0a0d24;
+  --vetro:linear-gradient(160deg, rgba(255,255,255,.10), rgba(255,255,255,.04)),
+          rgba(17,21,50,.62);
+  --vetro-forte:rgba(255,255,255,.085);
+  --vetro-passa:rgba(255,255,255,.11);
+  --bordo:rgba(255,255,255,.16);
+  --riga:rgba(255,255,255,.10);
+  --ombra:0 8px 32px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.10);
+  --testo:#eef0ff;
+  --testo-tenue:#a5abd4;
+  --tendina:#151a3c;
+  --tre:#ff6fa5;
+  --due:#ffc46b;
+  --uno:#86e0b4;
+  --zero:#8f9ac9;
+  --terra:rgba(255,255,255,.085);
+  --terra-accesa:rgba(255,255,255,.13);
+  --conf-prov:rgba(255,255,255,.17);
+  --conf-reg:rgba(255,255,255,.58);
+  --ombra-terra:drop-shadow(0 10px 26px rgba(0,0,0,.45));
+  --alone:#fff;
+  --ombra-spilli:drop-shadow(0 0 3px rgba(0,0,0,.55));
+  --raggio:20px;
+  /* Le macchie di colore: sfumature vere, non riquadri sfocati. Un
+     filter: blur() su superfici grandi il browser lo disegna a piastrelle,
+     e sugli schermi larghi si vedono le giunzioni. */
+  --macchie:
+    radial-gradient(58vw 58vw at 6% -6%,  rgba(255,95,158,.42), transparent 62%),
+    radial-gradient(50vw 50vw at 104% 28%, rgba(47,191,134,.30), transparent 62%),
+    radial-gradient(52vw 52vw at 38% 118%, rgba(106,91,255,.44), transparent 62%),
+    radial-gradient(26vw 26vw at 84% 96%, rgba(255,196,107,.24), transparent 62%);
+  --velo:radial-gradient(70% 55% at 50% 45%, rgba(6,9,28,.46), rgba(6,9,28,.74));
+  --freccia:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23a5abd4' stroke-width='1.6'/></svg>");
+}
+
+:root[data-tema="chiaro"]{
+  --fondo:#f4f1ea;
+  --vetro:linear-gradient(160deg, rgba(255,255,255,.80), rgba(255,255,255,.58)),
+          rgba(255,255,255,.55);
+  --vetro-forte:rgba(255,255,255,.62);
+  --vetro-passa:rgba(0,0,0,.05);
+  --bordo:rgba(255,255,255,.85);
+  --riga:rgba(20,24,50,.10);
+  --ombra:0 8px 30px rgba(60,52,80,.13), inset 0 1px 0 rgba(255,255,255,.85);
+  --testo:#221f33;
+  --testo-tenue:#6d6880;
+  --tendina:#ffffff;
+  --tre:#e0357c;
+  --due:#c9821a;
+  --uno:#1f9e6b;
+  --zero:#8b90ad;
+  --terra:rgba(38,32,60,.075);
+  --terra-accesa:rgba(38,32,60,.14);
+  --conf-prov:rgba(38,32,60,.22);
+  --conf-reg:rgba(38,32,60,.55);
+  --ombra-terra:drop-shadow(0 8px 20px rgba(90,80,120,.16));
+  --alone:#221f33;
+  --ombra-spilli:drop-shadow(0 1px 2px rgba(60,50,90,.30));
+  --macchie:
+    radial-gradient(58vw 58vw at 6% -6%,  rgba(255,143,186,.42), transparent 62%),
+    radial-gradient(50vw 50vw at 104% 28%, rgba(120,222,183,.34), transparent 62%),
+    radial-gradient(52vw 52vw at 38% 118%, rgba(160,150,255,.34), transparent 62%),
+    radial-gradient(26vw 26vw at 84% 96%, rgba(255,206,130,.34), transparent 62%);
+  --velo:radial-gradient(70% 55% at 50% 45%, rgba(255,253,248,.42), rgba(255,253,248,.20));
+  --freccia:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%236d6880' stroke-width='1.6'/></svg>");
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--fondo);
+  transition:background .25s;
+  color:var(--testo);
+  font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+  /* Trascinando la mappa il browser selezionava mezza pagina, che si
+     colorava di azzurro. La selezione resta dove serve: nel campo di ricerca. */
+  user-select:none;
+  -webkit-user-select:none;
+  -webkit-tap-highlight-color:transparent;
+}
+input,.scheda h2,.scheda .dove,.premio{user-select:text;-webkit-user-select:text}
+
+/* --- le macchie di colore dietro al vetro ---
+   tenute basse di proposito: devono colorare il fondo, non contendere la
+   scena alla mappa. Sopra passa un velo che ricompatta il tutto. */
+.sfondo{position:fixed;inset:0;overflow:hidden;z-index:0;background:var(--macchie)}
+.velo{position:absolute;inset:0;background:var(--velo)}
+
+/* --- vetro ---
+   il velo scuro sotto le macchie lascia zone quasi nere: senza una base
+   opaca il pannello sparirebbe proprio dove serve leggerlo. */
+.vetro{
+  background:var(--vetro);
+  border:1px solid var(--bordo);
+  border-radius:var(--raggio);
+  backdrop-filter:blur(22px) saturate(150%);
+  -webkit-backdrop-filter:blur(22px) saturate(150%);
+  box-shadow:var(--ombra);
+}
+
+/* --- impaginazione --- */
+#scena{position:fixed;inset:0;z-index:1}
+#tela{position:absolute;inset:0;left:var(--sinistra,0);touch-action:none;cursor:grab}
+#tela.trascino,#tela.trascino *{cursor:grabbing}
+svg#mappa{width:100%;height:100%;display:block}
+
+.testata{
+  position:absolute;left:22px;top:22px;z-index:5;
+  padding:16px 20px 14px;width:308px;max-width:calc(100vw - 44px);
+}
+.testata h1{
+  margin:0;font-size:19px;font-weight:650;letter-spacing:-.015em;
+  display:flex;align-items:center;gap:9px;
+}
+.testata h1 svg{flex:0 0 auto}
+.sottotitolo{margin:3px 0 0;font-size:12px;color:var(--testo-tenue)}
+
+.cerca{position:relative;margin-top:13px}
+.cerca input{
+  width:100%;padding:9px 32px 9px 32px;border-radius:12px;
+  border:1px solid var(--bordo);background:var(--vetro-forte);
+  color:var(--testo);font:inherit;font-size:13px;outline:none;
+}
+.cerca input::placeholder{color:var(--testo-tenue)}
+.cerca input:focus{border-color:rgba(255,255,255,.34)}
+.cerca .lente{position:absolute;left:10px;top:50%;transform:translateY(-50%);
+  width:14px;height:14px;opacity:.55;pointer-events:none}
+.cerca .pulisci{position:absolute;right:6px;top:50%;transform:translateY(-50%);
+  border:0;background:none;color:var(--testo-tenue);cursor:pointer;
+  font-size:16px;line-height:1;padding:4px 6px;display:none}
+
+select.regione{
+  width:100%;margin-top:9px;padding:8px 10px;border-radius:12px;
+  border:1px solid var(--bordo);background:var(--vetro-forte);
+  color:var(--testo);font:inherit;font-size:13px;outline:none;
+  -webkit-appearance:none;appearance:none;cursor:pointer;
+  background-image:var(--freccia);
+  background-repeat:no-repeat;background-position:right 11px center;background-size:11px;
+}
+select.regione option{background:var(--tendina);color:var(--testo)}
+
+.gruppi{display:flex;flex-direction:column;gap:5px;margin-top:12px}
+.gruppo{
+  display:flex;align-items:center;gap:9px;width:100%;
+  padding:6px 9px;border-radius:11px;border:1px solid transparent;
+  background:none;color:var(--testo);font:inherit;font-size:12.5px;
+  cursor:pointer;text-align:left;transition:background .15s,border-color .15s,opacity .15s;
+}
+.gruppo:hover{background:var(--vetro-passa)}
+.gruppo[aria-pressed="false"]{opacity:.34}
+.gruppo .bolla{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.gruppo .quanti{margin-left:auto;color:var(--testo-tenue);font-variant-numeric:tabular-nums}
+.gruppo:nth-child(1) .bolla{background:var(--tre);box-shadow:0 0 10px var(--tre)}
+.gruppo:nth-child(2) .bolla{background:var(--due);box-shadow:0 0 10px var(--due)}
+.gruppo:nth-child(3) .bolla{background:var(--uno);box-shadow:0 0 10px var(--uno)}
+.gruppo:nth-child(4) .bolla{background:var(--zero)}
+
+.conteggio{
+  margin-top:12px;padding-top:11px;border-top:1px solid var(--riga);
+  font-size:12px;color:var(--testo-tenue);
+}
+.conteggio b{color:var(--testo);font-weight:600;font-variant-numeric:tabular-nums}
+
+/* --- comandi zoom --- */
+.comandi{position:absolute;right:22px;bottom:22px;z-index:5;
+  display:flex;flex-direction:column;padding:5px;gap:3px}
+.comandi button{
+  width:34px;height:34px;border:0;border-radius:11px;background:none;
+  color:var(--testo);cursor:pointer;font-size:16px;line-height:1;
+  display:grid;place-items:center;transition:background .15s;
+}
+.comandi button:hover{background:var(--vetro-passa)}
+.comandi hr{border:0;border-top:1px solid var(--riga);margin:1px 4px}
+
+/* --- etichetta regione sotto il cursore --- */
+.etichetta{
+  position:absolute;left:50%;transform:translateX(-50%);bottom:22px;z-index:4;
+  padding:7px 15px;font-size:12.5px;color:var(--testo-tenue);
+  pointer-events:none;opacity:0;transition:opacity .18s;white-space:nowrap;
+}
+.etichetta.viva{opacity:1}
+.etichetta b{color:var(--testo);font-weight:600}
+
+/* --- fumetto al passaggio del mouse --- */
+.fumetto{
+  position:absolute;z-index:6;padding:7px 12px;pointer-events:none;
+  font-size:12.5px;white-space:nowrap;opacity:0;
+  transform:translate(-50%,-152%);transition:opacity .12s;border-radius:13px;
+}
+.fumetto.viva{opacity:1}
+.fumetto .luogo{color:var(--testo-tenue);font-size:11.5px}
+
+/* --- scheda del locale --- */
+/* Posizione decisa dal JavaScript, accanto al pin scelto: su uno schermo
+   molto largo il bordo destro della finestra e' lontanissimo dalla mappa. */
+.scheda{
+  position:absolute;left:0;top:0;z-index:6;width:326px;
+  max-width:calc(100vw - 44px);padding:20px 22px 18px;
+  opacity:0;transform:translateY(-8px) scale(.98);pointer-events:none;
+  transition:opacity .22s,transform .22s;
+}
+.scheda.viva{opacity:1;transform:none;pointer-events:auto}
+.scheda .chiudi{
+  position:absolute;right:12px;top:12px;width:26px;height:26px;border:0;
+  border-radius:9px;background:var(--vetro-passa);color:var(--testo-tenue);
+  cursor:pointer;font-size:15px;line-height:1;display:grid;place-items:center;
+}
+.scheda .chiudi:hover{background:var(--vetro-forte);color:var(--testo)}
+.scheda h2{margin:0 30px 0 0;font-size:17.5px;font-weight:650;letter-spacing:-.01em}
+.coni{display:flex;align-items:center;gap:5px;margin-top:9px;font-size:12px;color:var(--testo-tenue)}
+.coni svg{width:15px;height:15px}
+.scheda .dove{margin:13px 0 0;font-size:13px;color:var(--testo-tenue);line-height:1.5}
+.scheda .dove b{color:var(--testo);font-weight:600}
+.premio{
+  display:inline-block;margin-top:12px;padding:5px 11px;border-radius:999px;
+  background:rgba(255,196,107,.13);border:1px solid rgba(255,196,107,.30);
+  color:#ffd79a;font-size:11.5px;
+}
+.avviso{margin-top:10px;font-size:11.5px;color:#ffb37a;opacity:.85}
+.legami{display:flex;gap:8px;margin-top:16px}
+.legami a{
+  flex:1;text-align:center;padding:8px 6px;border-radius:12px;
+  border:1px solid var(--bordo);background:var(--vetro-forte);
+  color:var(--testo);text-decoration:none;font-size:12px;transition:background .15s;
+}
+.legami a:hover{background:var(--vetro-passa)}
+
+/* --- mappa --- */
+.terra{fill:var(--terra);filter:var(--ombra-terra)}
+.terra path{transition:fill .15s}
+.terra path.accesa{fill:var(--terra-accesa)}
+#tela.trascino .terra path.accesa{fill:var(--terra)}
+.conf-prov,.conf-reg,#alone{pointer-events:none}
+.conf-prov{fill:none;stroke:var(--conf-prov);stroke-width:.6px}
+.conf-reg{fill:none;stroke:var(--conf-reg);stroke-width:1.35px;stroke-linejoin:round;stroke-linecap:round}
+/* Il contorno trasparente non si vede ma conta per il puntatore: l'area
+   sensibile passa da 6 a 20 pixel di diametro senza ingrossare il punto. */
+#spilli circle{cursor:pointer;transition:opacity .2s;stroke:transparent}
+#spilli{filter:var(--ombra-spilli)}
+#spilli circle.spenta{opacity:.07;pointer-events:none}
+.c3{fill:var(--tre)}
+.c2{fill:var(--due)}
+.c1{fill:var(--uno)}
+.c0{fill:var(--zero)}
+#alone{fill:none;stroke:var(--alone);stroke-width:1.5px;opacity:0}
+#alone.viva{opacity:.9}
+
+.caricamento{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:9;
+  color:var(--testo-tenue);font-size:13px;
+}
+
+/* Su schermo stretto il pannello va in fondo: se resta in alto copre
+   proprio la parte d'Italia dove ci sono piu' gelaterie. */
+@media (max-width:820px){
+  .testata{left:10px;right:10px;bottom:10px;top:auto;width:auto;padding:12px 14px 11px}
+  .testata h1{font-size:16px}
+  .sottotitolo{display:none}
+  .cerca{margin-top:10px}
+  .gruppi{flex-direction:row;flex-wrap:wrap;gap:5px;margin-top:10px}
+  .gruppo{
+    width:auto;padding:5px 10px;border-radius:999px;
+    border:1px solid var(--bordo);background:var(--vetro-forte);font-size:11.5px;
+  }
+  .gruppo .quanti{margin-left:3px}
+  .conteggio{margin-top:10px;padding-top:9px}
+  /* la mappa si ferma sopra al pannello, altrimenti la Sicilia resta sotto */
+  #tela{bottom:var(--sotto,300px)}
+  .scheda{left:10px !important;right:10px;top:10px !important;width:auto}
+  .comandi{right:10px;bottom:auto;top:50%;transform:translateY(-50%)}
+  .etichetta{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="sfondo" aria-hidden="true"><div class="velo"></div></div>
+
+<div id="scena">
+  <div id="tela">
+    <svg id="mappa" role="img" aria-label="Mappa delle gelaterie premiate in Italia"></svg>
+  </div>
+
+  <header class="testata vetro">
+    <h1>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M8 9.5a4 4 0 0 1 8 0" stroke="#ff6fa5" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M6.6 9.5h10.8L12 21.5 6.6 9.5Z" stroke="#ffc46b" stroke-width="1.7" stroke-linejoin="round"/>
+      </svg>
+      Gelaterie d'Italia
+      <span style="color:var(--testo-tenue);font-weight:500">2027</span>
+    </h1>
+    <p class="sottotitolo">La guida del Gambero Rosso, sulla mappa.</p>
+
+    <div class="cerca">
+      <svg class="lente" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 11l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <input id="cerca" type="search" placeholder="Cerca una gelateria o una città" autocomplete="off" spellcheck="false">
+      <button class="pulisci" id="pulisci" title="Cancella">&times;</button>
+    </div>
+
+    <select class="regione" id="regione" aria-label="Regione">
+      <option value="">Tutta l'Italia</option>
+    </select>
+
+    <div class="gruppi" id="gruppi">
+      <button class="gruppo" data-coni="3" aria-pressed="true"><span class="bolla"></span>Tre coni<span class="quanti"></span></button>
+      <button class="gruppo" data-coni="2" aria-pressed="true"><span class="bolla"></span>Due coni<span class="quanti"></span></button>
+      <button class="gruppo" data-coni="1" aria-pressed="true"><span class="bolla"></span>Un cono<span class="quanti"></span></button>
+      <button class="gruppo" data-coni="0" aria-pressed="true"><span class="bolla"></span>Senza punteggio<span class="quanti"></span></button>
+    </div>
+
+    <p class="conteggio" id="conteggio"></p>
+  </header>
+
+  <div class="comandi vetro">
+    <button id="piu" title="Ingrandisci">+</button>
+    <button id="meno" title="Riduci">&minus;</button>
+    <hr>
+    <button id="tema" title="Chiaro / scuro">
+      <svg id="icona-tema" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"></svg>
+    </button>
+    <button id="tutto" title="Tutta l'Italia (Esc)">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="etichetta vetro" id="etichetta"></div>
+  <div class="fumetto vetro" id="fumetto"></div>
+
+  <aside class="scheda vetro" id="scheda" aria-live="polite">
+    <button class="chiudi" id="chiudi" title="Chiudi">&times;</button>
+    <h2 id="s-nome"></h2>
+    <div class="coni" id="s-coni"></div>
+    <p class="dove" id="s-dove"></p>
+    <div id="s-premio"></div>
+    <div id="s-avviso"></div>
+    <div class="legami">
+      <a id="s-gr" href="#" target="_blank" rel="noopener">Scheda Gambero Rosso</a>
+      <a id="s-map" href="#" target="_blank" rel="noopener">Indicazioni</a>
+    </div>
+  </aside>
+
+  <div class="caricamento" id="caricamento">caricamento della mappa...</div>
+</div>
+
+<script>
+'use strict';
+
+const NS = 'http://www.w3.org/2000/svg';
+const RAGGIO = 3.4;            // raggio degli spilli, in pixel di schermo veri
+const PRESA = 9;               // contorno invisibile: allarga l'area cliccabile
+const $ = (id) => document.getElementById(id);
+
+const svg = $('mappa');
+const tela = $('tela');
+let mappa, locali;
+let vista = {k: 1, x: 0, y: 0};   // trasformazione applicata al gruppo
+let scelto = null;
+let filtri = {testo: '', regione: '', coni: new Set([0, 1, 2, 3])};
+let gRadice, gTerra, gSpilli, alone, regolaRaggio;
+let riquadri = {};                // riquadro di ogni regione, per l'inquadratura
+let regioneInquadrata = null;     // per far tornare indietro il secondo click
+let ultimoClickRegione = 0;
+
+/* ------------------------------------------------------------------ */
+/* avvio                                                               */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* tema chiaro / scuro                                                 */
+/* ------------------------------------------------------------------ */
+const SOLE = '<circle cx="8" cy="8" r="3.1" stroke="currentColor" stroke-width="1.5"/>' +
+  '<path d="M8 .8v1.8M8 13.4v1.8M15.2 8h-1.8M2.6 8H.8M13.1 13.1l-1.3-1.3M4.2 4.2 2.9 2.9' +
+  'M13.1 2.9l-1.3 1.3M4.2 11.8l-1.3 1.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>';
+const LUNA = '<path d="M13.4 9.6A6 6 0 0 1 6.4 2.6 6 6 0 1 0 13.4 9.6Z" ' +
+  'stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>';
+
+function applicaTema(t) {
+  document.documentElement.dataset.tema = t;
+  const i = $('icona-tema');
+  if (i) i.innerHTML = t === 'chiaro' ? LUNA : SOLE;   // mostra dove si va
+  try { localStorage.setItem('tema', t); } catch (e) { /* finestra privata */ }
+}
+
+function temaIniziale() {
+  let t = null;
+  try { t = localStorage.getItem('tema'); } catch (e) { /* niente */ }
+  if (!t) {
+    t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches
+        ? 'chiaro' : 'scuro';
+  }
+  applicaTema(t);
+}
+
+temaIniziale();
+
+Promise.all([
+  fetch('data/mappa.json').then(r => r.json()),
+  fetch('data/gelaterie.json').then(r => r.json()),
+]).then(([m, g]) => {
+  mappa = m;
+  locali = g.map((x, i) => Object.assign({i}, x, proietta(x.lng, x.lat)));
+  disegna();
+  $('caricamento').remove();
+}).catch(e => {
+  $('caricamento').textContent = 'Non riesco a leggere i dati: ' + e;
+});
+
+function proietta(lon, lat) {
+  const p = mappa.proj;
+  const mx = lon * Math.PI / 180;
+  const my = Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
+  return {x: (mx - p.minx) * p.k, y: (p.maxy - my) * p.k};
+}
+
+/* ------------------------------------------------------------------ */
+/* costruzione dell'SVG                                                */
+/* ------------------------------------------------------------------ */
+function disegna() {
+  svg.setAttribute('viewBox', `0 0 ${mappa.w} ${mappa.h}`);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+  gRadice = crea('g');
+  svg.appendChild(gRadice);
+
+  gTerra = crea('g', {class: 'terra'});
+  for (const p of mappa.province) {
+    const el = crea('path', {d: p.d, 'data-r': p.r, 'data-rn': p.rn, 'data-n': p.n});
+    gTerra.appendChild(el);
+  }
+  gRadice.appendChild(gTerra);
+
+  gRadice.appendChild(crea('path', {class: 'conf-prov', d: mappa.confini_provincia,
+                                    'vector-effect': 'non-scaling-stroke'}));
+  gRadice.appendChild(crea('path', {class: 'conf-reg', d: mappa.regioni,
+                                    'vector-effect': 'non-scaling-stroke'}));
+
+  alone = crea('circle', {id: 'alone', r: RAGGIO * 2.4, cx: 0, cy: 0,
+                          'vector-effect': 'non-scaling-stroke'});
+  gRadice.appendChild(alone);
+
+  gSpilli = crea('g', {id: 'spilli'});
+  // i tre coni per ultimi, cosi' restano sopra agli altri
+  for (const l of [...locali].sort((a, b) => a.c - b.c)) {
+    const c = crea('circle', {cx: l.x.toFixed(1), cy: l.y.toFixed(1), r: RAGGIO,
+                              class: 'c' + l.c});
+    c.__l = l;
+    l.el = c;
+    gSpilli.appendChild(c);
+  }
+  gRadice.appendChild(gSpilli);
+
+  // il raggio degli spilli non deve crescere con lo zoom: una regola di stile
+  // sola invece di 580 attributi da riscrivere a ogni rotellata
+  const foglio = document.createElement('style');
+  document.head.appendChild(foglio);
+  const cssRaggio = window.CSS && CSS.supports && CSS.supports('r', '3px');
+  // Un cerchio di raggio R nel gruppo si vede grande R * k * f: per averlo
+  // di RAGGIO pixel sullo schermo va diviso anche per il fattore della
+  // finestra, non solo per lo zoom. Senza questo i punti rimpiccioliscono
+  // insieme alla finestra e diventano difficili da centrare.
+  regolaRaggio = (k) => {
+    const s = k * fattoreSchermo();
+    const r = (RAGGIO / s).toFixed(3);
+    const presa = (PRESA / s).toFixed(3);
+    if (cssRaggio) {
+      foglio.textContent = `#spilli circle{r:${r}px;stroke-width:${presa}px}` +
+                           `#alone{r:${(RAGGIO * 2.4 / s).toFixed(3)}px}`;
+    } else {
+      for (const l of locali) {
+        l.el.setAttribute('r', r);
+        l.el.setAttribute('stroke-width', presa);
+      }
+      alone.setAttribute('r', (RAGGIO * 2.4 / s).toFixed(3));
+    }
+  };
+
+  misuraRegioni();
+  riempiRegioni();
+  spazioSotto();
+  aggiornaConteggi();
+  inquadra(riquadri[''], 0.94);   // un filo di margine sui bordi
+  collega();
+}
+
+function crea(nome, attr) {
+  const el = document.createElementNS(NS, nome);
+  for (const k in attr) el.setAttribute(k, attr[k]);
+  return el;
+}
+
+/** Riquadro di ogni regione, leggendo i numeri dei tracciati. */
+function misuraRegioni() {
+  for (const p of mappa.province) {
+    const n = p.d.match(/-?\d+(?:\.\d+)?/g);
+    let r = riquadri[p.r] || (riquadri[p.r] = {x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9});
+    for (let i = 0; i < n.length; i += 2) {
+      const x = +n[i], y = +n[i + 1];
+      if (x < r.x0) r.x0 = x;
+      if (x > r.x1) r.x1 = x;
+      if (y < r.y0) r.y0 = y;
+      if (y > r.y1) r.y1 = y;
+    }
+  }
+  riquadri[''] = {x0: 0, y0: 0, x1: mappa.w, y1: mappa.h};
+}
+
+function riempiRegioni() {
+  const nomi = {};
+  for (const p of mappa.province) nomi[p.r] = p.rn;
+  const sel = $('regione');
+  Object.keys(nomi).sort((a, b) => nomi[a].localeCompare(nomi[b])).forEach(k => {
+    const o = document.createElement('option');
+    o.value = k;
+    o.textContent = nomi[k];
+    sel.appendChild(o);
+  });
+}
+
+/* ------------------------------------------------------------------ */
+/* zoom e spostamento                                                  */
+/* ------------------------------------------------------------------ */
+function applicaVista() {
+  gRadice.setAttribute('transform',
+    `translate(${vista.x.toFixed(2)} ${vista.y.toFixed(2)}) scale(${vista.k.toFixed(4)})`);
+  regolaRaggio(vista.k);
+  if (scelto) posizionaScheda();
+}
+
+/** Rapporto fra le unita' del viewBox e i pixel dello schermo. */
+function fattoreSchermo() {
+  const r = svg.getBoundingClientRect();
+  const f = Math.min(r.width / mappa.w, r.height / mappa.h);
+  return f > 0 ? f : 1;      // finestra nascosta: meglio 1 che una divisione per zero
+}
+
+/** Quanta mappa ci sta davvero nella finestra, in unita' del viewBox.
+    Con preserveAspectRatio="meet" una delle due misure e' piu' grande del
+    viewBox: se non se ne tiene conto, una regione inquadrata resta piccola
+    invece di riempire lo spazio. */
+function estensioneVisibile() {
+  const r = svg.getBoundingClientRect();
+  const f = fattoreSchermo();
+  return {w: r.width / f, h: r.height / f};
+}
+
+/** Coordinate del viewBox a partire da un punto dello schermo. */
+function versoMappa(cx, cy) {
+  const r = svg.getBoundingClientRect();
+  const f = fattoreSchermo();
+  const ox = (r.width - mappa.w * f) / 2;
+  const oy = (r.height - mappa.h * f) / 2;
+  return {x: (cx - r.left - ox) / f, y: (cy - r.top - oy) / f};
+}
+
+function zooma(fattore, cx, cy) {
+  if (!isFinite(fattore) || fattore <= 0) return;
+  const k2 = Math.max(0.9, Math.min(40, vista.k * fattore));
+  const f = k2 / vista.k;
+  const p = versoMappa(cx, cy);
+  vista.x = p.x - (p.x - vista.x) * f;
+  vista.y = p.y - (p.y - vista.y) * f;
+  vista.k = k2;
+  applicaVista();
+}
+
+function inquadra(r, margine) {
+  const m = margine === undefined ? 0.86 : margine;
+  const v = estensioneVisibile();
+  const k = Math.max(0.9, Math.min(40, m * Math.min(v.w / (r.x1 - r.x0),
+                                                    v.h / (r.y1 - r.y0))));
+  vista.k = k;
+  vista.x = mappa.w / 2 - k * (r.x0 + r.x1) / 2;
+  vista.y = mappa.h / 2 - k * (r.y0 + r.y1) / 2;
+  applicaVista();
+}
+
+/** Inquadra un gruppo di gelaterie. Con un solo risultato non ha senso
+    arrivare al massimo ingrandimento: si tiene un minimo di contorno. */
+function inquadraPunti(elenco) {
+  if (!elenco.length) return;
+  let r = {x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9};
+  for (const l of elenco) {
+    if (l.x < r.x0) r.x0 = l.x;
+    if (l.x > r.x1) r.x1 = l.x;
+    if (l.y < r.y0) r.y0 = l.y;
+    if (l.y > r.y1) r.y1 = l.y;
+  }
+  // Con un risultato solo si arrivava a 31 ingrandimenti: un rettangolo di
+  // quaranta chilometri, dove i contorni semplificati si vedono spigolosi e
+  // non si capisce piu' dove sei. Meglio fermarsi al circondario.
+  const MINIMO = 80;
+  if (r.x1 - r.x0 < MINIMO) {
+    const c = (r.x0 + r.x1) / 2; r.x0 = c - MINIMO / 2; r.x1 = c + MINIMO / 2;
+  }
+  if (r.y1 - r.y0 < MINIMO) {
+    const c = (r.y0 + r.y1) / 2; r.y0 = c - MINIMO / 2; r.y1 = c + MINIMO / 2;
+  }
+  regioneInquadrata = null;
+  inquadra(r, 0.82);
+}
+
+/* ------------------------------------------------------------------ */
+/* filtri                                                              */
+/* ------------------------------------------------------------------ */
+function senzaAccenti(s) {
+  return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function passa(l) {
+  if (!filtri.coni.has(l.c)) return false;
+  if (filtri.regione && l.r !== filtri.regione) return false;
+  if (filtri.testo) {
+    const t = filtri.testo;
+    if (!senzaAccenti(l.n).includes(t) && !senzaAccenti(l.ci).includes(t) &&
+        !senzaAccenti(l.a).includes(t)) return false;
+  }
+  return true;
+}
+
+function applicaFiltri() {
+  let n = 0;
+  for (const l of locali) {
+    const ok = passa(l);
+    l.el.classList.toggle('spenta', !ok);
+    if (ok) n++;
+  }
+  if (scelto && !passa(scelto)) chiudiScheda();
+  aggiornaConteggi(n);
+}
+
+function aggiornaConteggi(visibili) {
+  const perConi = {0: 0, 1: 0, 2: 0, 3: 0};
+  for (const l of locali) perConi[l.c]++;
+  document.querySelectorAll('.gruppo').forEach(b => {
+    b.querySelector('.quanti').textContent = perConi[+b.dataset.coni];
+  });
+  const n = visibili === undefined ? locali.length : visibili;
+  $('conteggio').innerHTML = n === locali.length
+    ? `<b>${locali.length}</b> gelaterie premiate`
+    : `<b>${n}</b> di ${locali.length} gelaterie`;
+}
+
+/* ------------------------------------------------------------------ */
+/* scheda e fumetto                                                    */
+/* ------------------------------------------------------------------ */
+function coniHtml(n) {
+  if (!n) return 'Segnalata in guida';
+  let s = '';
+  for (let i = 0; i < n; i++) {
+    s += `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M8 9.5a4 4 0 0 1 8 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M6.6 9.5h10.8L12 21.5 6.6 9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`;
+  }
+  return `<span style="color:var(--${['zero','uno','due','tre'][n]});display:flex;gap:4px">${s}</span>` +
+         `<span>${['', 'Un cono', 'Due coni', 'Tre coni'][n]}</span>`;
+}
+
+/** Mette la scheda accanto al suo pin, di lato se c'e' posto e dalla parte
+    opposta se non ce n'e'. Su schermo stretto resta il pannello in alto. */
+function posizionaScheda() {
+  const s = $('scheda');
+  if (!scelto) return;
+  if (window.innerWidth <= 820) { s.style.left = ''; s.style.top = ''; return; }
+  const p = new DOMPoint(scelto.x, scelto.y).matrixTransform(gSpilli.getScreenCTM());
+  const b = s.getBoundingClientRect();
+  const margine = 18, bordo = 14;
+  let x = p.x + margine;
+  if (x + b.width > window.innerWidth - bordo) x = p.x - margine - b.width;
+  x = Math.max(bordo, Math.min(x, window.innerWidth - b.width - bordo));
+  const y = Math.max(bordo, Math.min(p.y - b.height / 2,
+                                     window.innerHeight - b.height - bordo));
+  s.style.left = Math.round(x) + 'px';
+  s.style.top = Math.round(y) + 'px';
+}
+
+function apriScheda(l) {
+  scelto = l;
+  $('s-nome').textContent = l.n;
+  $('s-coni').innerHTML = coniHtml(l.c);
+  $('s-dove').innerHTML = l.a.replace(/ – /, '<br><b>') + '</b>';
+  $('s-premio').innerHTML = l.pr
+    ? `<span class="premio">${l.pr.replace(/^Premio\s+/, '')}</span>` : '';
+  $('s-avviso').innerHTML = l.ap
+    ? '<p class="avviso">Posizione approssimata: il Gambero Rosso non pubblica il punto esatto.</p>' : '';
+  $('s-gr').href = l.u;
+  // nome e indirizzo, non le sole coordinate: su Maps si arrivava a un
+  // puntino senza nome invece che sulla scheda del locale
+  $('s-map').href = 'https://www.google.com/maps/dir/?api=1&destination=' +
+    encodeURIComponent(l.n + ', ' + l.a.replace(' – ', ', '));
+  $('scheda').classList.add('viva');
+  alone.setAttribute('cx', l.x);
+  alone.setAttribute('cy', l.y);
+  alone.classList.add('viva');
+  posizionaScheda();
+}
+
+function chiudiScheda() {
+  scelto = null;
+  $('scheda').classList.remove('viva');
+  alone.classList.remove('viva');
+}
+
+function mostraFumetto(l) {
+  const f = $('fumetto');
+  f.innerHTML = `${l.n}<br><span class="luogo">${l.ci.replace(/(^|-)([a-z])/g,
+    (_, a, b) => a.replace('-', ' ') + b.toUpperCase())} (${l.p})</span>`;
+  const m = gSpilli.getScreenCTM();
+  const p = new DOMPoint(l.x, l.y).matrixTransform(m);
+  const r = tela.getBoundingClientRect();
+  f.style.left = (p.x - r.left) + 'px';
+  f.style.top = (p.y - r.top) + 'px';
+  f.classList.add('viva');
+}
+
+/* ------------------------------------------------------------------ */
+/* eventi                                                              */
+/* ------------------------------------------------------------------ */
+function collega() {
+  // --- rotellina ---
+  tela.addEventListener('wheel', e => {
+    e.preventDefault();
+    zooma(Math.pow(0.998, e.deltaY), e.clientX, e.clientY);
+  }, {passive: false});
+
+  // --- trascinamento (mouse e dito) ---
+  let giu = null, mosso = false;
+  const dita = new Map();
+  let pizzico = null;
+
+  tela.addEventListener('pointerdown', e => {
+    tela.setPointerCapture(e.pointerId);
+    dita.set(e.pointerId, {x: e.clientX, y: e.clientY});
+    if (dita.size === 2) {
+      const [a, b] = [...dita.values()];
+      const d0 = Math.hypot(a.x - b.x, a.y - b.y);
+      pizzico = d0 ? {d: d0, k: vista.k} : null;
+    }
+    giu = {x: e.clientX, y: e.clientY, vx: vista.x, vy: vista.y};
+    mosso = false;
+    tela.classList.add('trascino');
+  });
+
+  tela.addEventListener('pointermove', e => {
+    if (dita.has(e.pointerId)) dita.set(e.pointerId, {x: e.clientX, y: e.clientY});
+    if (pizzico && dita.size === 2) {
+      const [a, b] = [...dita.values()];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (!pizzico.d || !d) return;      // due dita sullo stesso punto
+      zooma((d / pizzico.d) / (vista.k / pizzico.k), (a.x + b.x) / 2, (a.y + b.y) / 2);
+      mosso = true;
+      return;
+    }
+    if (!giu) return;
+    // La soglia va misurata in pixel dello schermo: in unita' di mappa un
+    // solo pixel di tremolio della mano ne vale tre, e ogni click un po'
+    // impreciso veniva scambiato per un trascinamento.
+    const sx = e.clientX - giu.x, sy = e.clientY - giu.y;
+    if (Math.abs(sx) + Math.abs(sy) > 5) mosso = true;
+    const f = fattoreSchermo();
+    vista.x = giu.vx + sx / f;
+    vista.y = giu.vy + sy / f;
+    applicaVista();
+  });
+
+  const su = e => {
+    const ultimo = dita.size === 1;
+    dita.delete(e.pointerId);
+    if (dita.size < 2) pizzico = null;
+    if (dita.size === 0) { giu = null; tela.classList.remove('trascino'); }
+    // La cattura del puntatore su #tela dirotta li' anche il click, quindi
+    // la selezione si decide qui, guardando cosa c'e' sotto al dito.
+    if (ultimo && !mosso && e.type === 'pointerup') {
+      const sotto = document.elementFromPoint(e.clientX, e.clientY);
+      if (sotto && sotto.__l && !sotto.classList.contains('spenta')) {
+        apriScheda(sotto.__l);
+      } else if (sotto && sotto.dataset && sotto.dataset.r) {
+        // il secondo colpo di un doppio click non deve reinquadrare
+        const ora = Date.now();
+        if (ora - ultimoClickRegione > 350) {
+          ultimoClickRegione = ora;
+          chiudiScheda();
+          if (regioneInquadrata === sotto.dataset.r) {
+            tuttaItalia();                    // secondo click: si torna indietro
+          } else {
+            inquadra(riquadri[sotto.dataset.r], 0.92);
+            regioneInquadrata = sotto.dataset.r;
+          }
+        }
+      } else {
+        chiudiScheda();
+      }
+    }
+  };
+  tela.addEventListener('pointerup', su);
+  tela.addEventListener('pointercancel', su);
+
+  // Doppio click: ingrandisce dove si trova il puntatore. Sulla terraferma
+  // no, perche' li' il click singolo inquadra gia' la regione.
+  tela.addEventListener('dblclick', e => {
+    const sotto = document.elementFromPoint(e.clientX, e.clientY);
+    if (sotto && (sotto.__l || (sotto.dataset && sotto.dataset.r))) return;
+    zooma(1.9, e.clientX, e.clientY);
+  });
+
+  // --- spilli ---
+  gSpilli.addEventListener('pointerover', e => {
+    if (e.target.__l && !e.target.classList.contains('spenta')) mostraFumetto(e.target.__l);
+  });
+  gSpilli.addEventListener('pointerout', () => $('fumetto').classList.remove('viva'));
+
+  // --- etichetta della regione sotto il cursore ---
+  gTerra.addEventListener('pointerover', e => {
+    const p = e.target.closest('path');
+    if (!p || !p.dataset.rn) return;
+    accendiRegione(p.dataset.r);
+    const q = locali.filter(l => l.r === p.dataset.r).length;
+    $('etichetta').innerHTML = `<b>${p.dataset.rn}</b> &middot; ${p.dataset.n} &middot; ${q} gelaterie`;
+    $('etichetta').classList.add('viva');
+  });
+  gTerra.addEventListener('pointerout', () => {
+    accendiRegione(null);
+    $('etichetta').classList.remove('viva');
+  });
+
+  // --- comandi ---
+  const centro = () => {
+    const r = tela.getBoundingClientRect();
+    return [r.left + r.width / 2, r.top + r.height / 2];
+  };
+  $('piu').onclick = () => zooma(1.5, ...centro());
+  $('meno').onclick = () => zooma(1 / 1.5, ...centro());
+  $('tutto').onclick = tuttaItalia;
+  $('tema').onclick = () =>
+    applicaTema(document.documentElement.dataset.tema === 'chiaro' ? 'scuro' : 'chiaro');
+  $('chiudi').onclick = chiudiScheda;
+
+  // --- filtri ---
+  $('cerca').addEventListener('input', e => {
+    filtri.testo = senzaAccenti(e.target.value.trim());
+    $('pulisci').style.display = e.target.value ? 'block' : 'none';
+    applicaFiltri();
+    // Trovare il risultato a occhio sulla mappa era il fastidio piu' grosso:
+    // appena i risultati sono pochi, la mappa ci va sopra da sola.
+    if (filtri.testo) {
+      const visti = locali.filter(passa);
+      if (visti.length && visti.length <= 25) inquadraPunti(visti);
+    }
+  });
+  // Invio: porta sui risultati anche quando sono tanti
+  $('cerca').addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    const visti = locali.filter(passa);
+    if (visti.length) inquadraPunti(visti);
+    e.target.blur();
+  });
+  $('pulisci').onclick = () => {
+    $('cerca').value = ''; filtri.testo = '';
+    $('pulisci').style.display = 'none'; applicaFiltri();
+  };
+  $('regione').addEventListener('change', e => {
+    filtri.regione = e.target.value;
+    applicaFiltri();
+    inquadra(riquadri[filtri.regione], filtri.regione ? 0.8 : 0.94);
+    regioneInquadrata = filtri.regione || null;
+  });
+  document.querySelectorAll('.gruppo').forEach(b => {
+    b.onclick = () => {
+      const n = +b.dataset.coni;
+      const acceso = b.getAttribute('aria-pressed') === 'true';
+      b.setAttribute('aria-pressed', acceso ? 'false' : 'true');
+      if (acceso) filtri.coni.delete(n); else filtri.coni.add(n);
+      applicaFiltri();
+    };
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    // prima chiude la scheda, poi torna all'Italia intera
+    if (scelto) chiudiScheda();
+    else tuttaItalia();
+  });
+  // prima lo spazio, poi il raggio: spazioSotto cambia la larghezza della
+  // mappa, e il raggio dipende da quella
+  window.addEventListener('resize',
+    () => { spazioSotto(); regolaRaggio(vista.k); posizionaScheda(); });
+}
+
+/** La mappa non deve finire sotto al pannello: di lato su schermo largo,
+    sopra al pannello su schermo stretto. */
+function spazioSotto() {
+  const t = document.querySelector('.testata');
+  const stretto = window.innerWidth <= 820;
+  const r = document.documentElement.style;
+  r.setProperty('--sotto', (t.offsetHeight + 20) + 'px');
+  r.setProperty('--sinistra', stretto ? '0px' : (t.offsetWidth + 44) + 'px');
+}
+
+function tuttaItalia() {
+  $('regione').value = '';
+  filtri.regione = '';
+  regioneInquadrata = null;
+  applicaFiltri();
+  inquadra(riquadri[''], 0.94);
+}
+
+let accesa = null;
+function accendiRegione(r) {
+  if (accesa === r) return;
+  accesa = r;
+  for (const p of gTerra.children) p.classList.toggle('accesa', !!r && p.dataset.r === r);
+}
+</script>
+</body>
+</html>

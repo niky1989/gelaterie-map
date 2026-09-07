@@ -1,0 +1,21 @@
+{
+  "_nota": "Coordinate del Gambero Rosso sbagliate, verificate una per una con OpenStreetMap. La chiave e' l'identificativo della scheda in raw.txt. 'ap' a 1 vuol dire che si e' potuto arrivare solo al centro del paese.",
+
+  "79233": {"lat": 45.846739, "lng": 12.880519, "ap": 0,
+            "perche": "'via B. Gemona' e' Via Battaglione Gemona a Cordovado; il loro geocodificatore ha agganciato il paese di Gemona del Friuli, 54 km piu' a nord"},
+
+  "379858": {"lat": 37.502925, "lng": 15.087427, "ap": 0,
+             "perche": "via Etnea 18 e' nel centro di Catania; il punto cadeva a Siracusa, 52 km piu' a sud"},
+
+  "78947": {"lat": 45.644588, "lng": 11.282940, "ap": 1,
+            "perche": "il punto cadeva a Vicenza invece che a Valdagno, 21 km; piazza Roma non risulta in OpenStreetMap, quindi centro del paese"},
+
+  "78991": {"lat": 43.486467, "lng": 13.484386, "ap": 0,
+            "perche": "via Campana e' nel centro di Osimo; il punto cadeva 12 km a est"},
+
+  "379844": {"lat": 45.550576, "lng": 12.070209, "ap": 0,
+             "perche": "piazza Castello e' a Noale; il punto cadeva 10 km a sud-est"},
+
+  "79215": {"lat": 44.926957, "lng": 9.911424, "ap": 0,
+            "perche": "via San Fiorenzo 39 e' a Fiorenzuola d'Arda; il punto cadeva 9 km a sud-ovest"}
+}

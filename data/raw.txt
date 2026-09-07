@@ -1,0 +1,580 @@
+78709\tMarghera\tgelateria/marghera\t45.4668429\t9.15254809999999\t1\tlombardia\tmi\tmilano\tvia Marghera, 33 – Milano (MI)\t
+78710\tOrsi\tgelateria/orsi\t45.4443497\t9.176621100000034\t2\tlombardia\tmi\tmilano\tvia E. Torricelli, 19 – Milano (MI)\t
+78712\tAl Settimo Gelo\tgelateria/al-settimo-gelo\t41.9179999\t12.461403\t2\tlazio\trm\troma\tvia Vodice, 21a – Roma (RM)\t
+78716\tFod\tcaffebar/fod\t40.7416876\t17.4262999\t1\tpuglia\tbr\tcisternino\tp.zza Vittorio Emanuele, 5 – Cisternino (BR)\t
+78719\tCaffè Fiorio\tcaffebar/caffe-fiorio\t45.0694922\t7.688094500000034\t1\tpiemonte\tto\ttorino\tvia Po, 8 – Torino (TO)\t
+78720\tPepino\tgelateria/pepino\t45.0689854\t7.6846014\t1\tpiemonte\tto\ttorino\tp.zza Carignano, 8 – Torino (TO)\t
+78721\tGelateria dei Gracchi\tgelateria/gelateria-dei-gracchi\t41.9090923\t12.466847599999937\t1\tlazio\trm\troma\tvia dei Gracchi, 272 – Roma (RM)\t
+78722\tSilvano - Gelato d?altri tempi\tgelateria/silvano-gelato-d%c2%92altri-tempi\t45.0407901\t7.6703452\t2\tpiemonte\tto\ttorino\tvia Nizza, 142 – Torino (TO)\t
+78723\tCiacci\tgelateria/ciacci\t45.0750139\t7.725582000000031\t2\tpiemonte\tto\ttorino\tc.so Belgio, 176b – Torino (TO)\t
+78724\tMiretti\tcaffebar/miretti\t45.0654401\t7.6773238\t2\tpiemonte\tto\ttorino\tc.so G. Matteotti, 5 – Torino (TO)\t
+78726\tVivoli\tcaffebar/vivoli\t43.7699351\t11.2600892\t2\ttoscana\tfi\tfirenze\tvia Isola delle Stinche, 7r – Firenze (FI)\t
+78727\tSottani\tgelateria/sottani\t43.7855007\t11.452005\t2\ttoscana\tfi\tpelago\tvia Forlivese, 93 – Pelago (FI)\t
+78728\tBar Trieste\tcaffebar/bar-trieste\t43.5215212\t13.248847\t2\tmarche\tan\tjesi\tv.le Trieste, 10 – Jesi (AN)\t
+78729\tGelateria Biagi\tgelateria/gelateria-biagi\t44.1114258\t9.958220500000039\t1\tliguria\tsp\tsarzana\tvia U. Muccini, 11b – Sarzana (SP)\t
+78730\tBar Corso\tcaffebar/bar-corso\t44.387331\t7.5456299\t2\tpiemonte\tcn\tcuneo\tc.so Nizza, 16 – Cuneo (CN)\t
+78731\tDa Ciccio\tcaffebar/da-ciccio\t40.7254484\t17.5780619\t2\tpuglia\tbr\tostuni\tvia A. Diaz, 66 – Ostuni (BR)\tPremio Gelatiere emergente 2024
+78733\tFrigidarium\tgelateria/frigidarium\t45.8156212\t8.2534612\t2\tpiemonte\tvc\tvarallo\tvia Umberto I, 38 – Varallo (VC)\t
+78734\tCaprice\tcaffebar/caprice\t42.4605184\t14.2117589\t1\tabruzzo\tpe\tpescara\tp.zza G. Garibaldi, 29 – Pescara (PE)\t
+78735\tGhignoni\tgelateria/ghignoni\t43.56333890299294\t12.159730525131181\t2\ttoscana\tar\tsansepolcro\tvia Tiberina Sud, 850 – Sansepolcro (AR)\t
+78736\tGelateria Pasticceria Badiani\tcaffebar/gelateria-pasticceria-badiani\t43.7820203\t11.2768743\t2\ttoscana\tfi\tfirenze\tv.le dei Mille, 20r – Firenze (FI)\t
+78737\tGran Caffè Tritone\tcaffebar/gran-caffe-tritone\t44.2726402\t9.394341\t1\tliguria\tge\tsestri-levante\tp.zza Francesco Bo, 1 – Sestri Levante (GE)\t
+78738\tErnesto\tcaffebar/ernesto\t37.5217103\t15.11434989999998\t1\tsicilia\tct\tcatania\tv.le R. di Lauria, 91 – Catania (CT)\t
+78739\tErcole\tcaffebar/ercole\t38.7353669\t16.1608545\t1\tcalabria\tvv\tpizzo\tp.zza della Repubblica, 18 – Pizzo (VV)\t
+78741\tMoré\tgelateria/more\t38.6901573\t16.5474604\t2\tcalabria\tcz\tsoverato\tvia Poliporto, 10 – Soverato (CZ)\t
+78742\tCremeria Aurelia\tgelateria/cremeria-aurelia\t41.8979696\t12.4306279\t2\tlazio\trm\troma\tvia Aurelia, 388/B – Roma (RM)\t
+78743\tFatamorgana\tgelateria/fatamorgana\t41.926342\t12.5107355\t2\tlazio\trm\troma\tvia Lago di Lesina, 9 – Roma (RM)\t
+78744\tGelateria Lurisia\tgelateria/gelateria-lurisia\t44.3913226\t7.8193035\t1\tpiemonte\tcn\tmondovi\tvia L. Einaudi, 2 – Mondovì (CN)\t
+78745\tGelateria Veneta 1885\tgelateria/gelateria-veneta-1885\t44.8853448\t7.3321829\t1\tpiemonte\tto\tpinerolo\tp.zza Cavour, 4 – Pinerolo (TO)\t
+78747\tL' Arte golosa\tgelateria/l-arte-golosa\t43.3537611\t12.5782333\t2\tumbria\tpg\tgubbio\tvia dei Consoli, 5 – Gubbio (PG)\t
+78749\tIl Gelatauro\tgelateria/il-gelatauro\t44.4940656\t11.3546827\t2\temilia-romagna\tbo\tbologna\tvia San Vitale, 98b – Bologna (BO)\t
+78750\tSorbetteria Castiglione\tgelateria/sorbetteria-castiglione\t44.4879061\t11.3479674\t2\temilia-romagna\tbo\tbologna\tvia Castiglione, 44d – Bologna (BO)\t
+78751\tStefino\tgelateria/stefino\t44.4940877\t11.352453100000048\t3\temilia-romagna\tbo\tbologna\tvia L. Serra, 3 – Bologna (BO)\t
+78752\tGelateria Europa\tgelateria/gelateria-europa\t42.5613147\t12.6468702\t2\tumbria\ttr\tterni\tp.zza Europa, 15 – Terni (TR)\t
+78754\tLa Sorbettiera\tgelateria/la-sorbettiera\t46.1461227\t12.2236044\t2\tveneto\tbl\tbelluno\tvia Vittorio Veneto, 97b – Belluno (BL)\t
+78755\tSanelli\tgelateria/sanelli\t44.8139078\t9.9825779\t3\temilia-romagna\tpr\tsalsomaggiore-terme\tp.zza del Popolo, 2/1 – Salsomaggiore Terme (PR)\tPremio Gelatieri che hanno fatto la storia 2027
+78756\tPandizucchero\tgelateria/pandizucchero\t45.7391475\t9.6212429\t2\tlombardia\tbg\talme\tvia A. Locatelli, 32 – Almè (BG)\t
+78757\tZampolli\tgelateria/zampolli\t45.6556363\t13.774356500000067\t2\tfriuli-venezia-giulia\tts\ttrieste\tvia C. Ghega, 10 – Trieste (TS)\t
+78758\tGelati DiVini\tgelateria/gelati-divini\t36.9261926\t14.7440922\t2\tsicilia\trg\tragusa\tp.zza Duomo, 20 – Ragusa (RG)\t
+78761\tGelatomania\tgelateria/gelatomania\t37.8542728\t15.2888095\t2\tsicilia\tme\ttaormina\tc.so Umberto, 7 – Taormina (ME)\t
+78763\tPastorino\tgelateria/pastorino\t44.2058643\t8.294104\t2\tliguria\tsv\tcalice-ligure\tvia Vittorio Veneto, 37 – Calice Ligure (SV)\t
+78764\tCasa del Gelato\tgelateria/casa-del-gelato\t44.0470521\t8.2200067\t2\tliguria\tsv\talbenga\tv.le Martiri della Libertà, 106 – Albenga (SV)\t
+78765\tFestival des Glaces\tgelateria/festival-des-glaces\t44.0472586\t8.2241668\t1\tliguria\tsv\talbenga\tv.le Italia, 47 – Albenga (SV)\t
+78766\tAl Soler\tgelateria/al-soler\t46.3947865\t12.1039396\t1\tveneto\tbl\tval-di-zoldo\tvia Pecol, 119 – Val di Zoldo (BL)\t
+78767\tGelateria Dondoli\tgelateria/gelateria-dondoli\t43.46738879999999\t11.043306\t3\ttoscana\tsi\tsan-gimignano\tp.zza della Cisterna, 4 – San Gimignano (SI)\tPremio Gelatieri che hanno fatto la storia 2027
+78768\tNatale\tgelateria/natale\t40.3534071\t18.173364\t2\tpuglia\tle\tlecce\tvia S. Trinchese, 7 – Lecce (LE)\t
+78769\tTimballo\tgelateria/timballo\t46.0692056\t13.2482478\t3\tfriuli-venezia-giulia\tud\tudine\tvia Cividale, 53 – Udine (UD)\tPremio Gelatieri che hanno fatto la storia 2027
+78771\tCanelin\tgelateria/canelin\t44.6636252\t8.4697725\t0\tpiemonte\tal\tacqui-terme\tv.le Antiche Terme, 16 – Acqui Terme (AL)\t
+78772\tGay Odin\tgelateria/gay-odin\t40.8476873\t14.2530938\t2\tcampania\tna\tnapoli\tvia B. Croce, 61 – Napoli (NA)\t
+78775\tGreed Avidi di Gelato\tgelateria/greed-avidi-di-gelato\t41.8091674\t12.68028819999995\t2\tlazio\trm\tfrascati\tp.zza Roma, 16 – Frascati (RM)\t
+78776\tRosy Bar\tcaffebar/rosy-bar\t36.8417046\t14.7664822\t1\tsicilia\trg\tmodica\tvia Risorgimento, 4 – Modica (RG)\t
+78778\tGelateria Crivella\tgelateria/gelateria-crivella\t40.0730404\t15.629601999999977\t3\tcampania\tsa\tsapri\tc.so Italia, 54 – Sapri (SA)\t
+78780\tBar del Tocco\tgelateria/bar-del-tocco\t38.2712657\t16.2196174\t1\tcalabria\trc\tgerace\tp.zza del Tocco, 7 – Gerace (RC)\t
+78782\tOfficina del Gelo Avalon\tgelateria/officina-del-gelo-avalon\t46.5015235\t11.340895100000012\t2\ttrentino-alto-adige\tbz\tbolzano-bozen\tc.so della Libertà, 44 – Bolzano/Bozen (BZ)\t
+78783\tDa Bepi\tgelateria/da-bepi\t45.4280848\t11.9140094\t1\tveneto\tpd\tpadova\tvia Madonna della Salute, 85 – Padova (PD)\t
+78785\tCremeria Gabriele\tgelateria/cremeria-gabriele\t40.6621526\t14.4260643\t3\tcampania\tna\tvico-equense\tc.so Umberto I, 8 – Vico Equense (NA)\t
+78786\tPasticceria Marisa\tcaffebar/pasticceria-marisa\t45.540688\t11.8752002\t3\tveneto\tpd\tsan-giorgio-delle-pertiche\tvia Roma, 422 – San Giorgio delle Pertiche (PD)\tPremio Miglior Packaging 2023
+78787\tGabrielino\tcaffebar/gabrielino\t41.7098761\t16.051174299999957\t2\tpuglia\tfg\tmattinata\tvia G. Garibaldi, 3 – Mattinata (FG)\t
+78788\tBandirali\tgelateria/bandirali\t45.3514205\t9.687621300000046\t1\tlombardia\tcr\tcrema\tvia Piacenza, 93 – Crema (CR)\t
+78790\tAscari\tgelateria/ascari\t44.9023542\t10.5368009\t1\temilia-romagna\tre\tboretto\tvia A. Carrara, 58 – Boretto (RE)\t
+78792\tOasi American Bar\tgelateria/oasi-american-bar\t45.5417143\t9.5557027\t2\tlombardia\tbg\tfara-gera-dadda\tvia Treviglio, 3461 – Fara Gera d'Adda (BG)\t
+78793\tGori Gelato\tgelateria/gori-gelato\t41.93490675761102\t12.536166523942597\t2\tlazio\trm\troma\tp.zza Menenio Agrippa, 8B/C – Roma (RM)\t
+78795\tZeno Gelato e Cioccolato\tgelateria/zeno-gelato-e-cioccolato\t45.441928\t10.9777538\t3\tveneto\tvr\tverona\tvia Sant'Alessio, 6 – Verona (VR)\t
+78796\tCremeria Scirocco\tgelateria/cremeria-scirocco\t44.4952989\t11.4010207\t3\temilia-romagna\tbo\tbologna\tvia Barelli, 1c – Bologna (BO)\t
+78797\tLa Gelateria della Musica\tgelateria/la-gelateria-della-musica\t45.4468\t9.155070199999955\t1\tlombardia\tmi\tmilano\tvia Lodovico Il Moro, 3 – Milano (MI)\t
+78798\tI Mannari\tgelateria/i-mannari\t41.8482432\t12.48697900000002\t2\tlazio\trm\troma\tvia di Grotta Perfetta, 125 – Roma (RM)\t
+78799\tGelato Giusto\tgelateria/gelato-giusto\t45.4786344\t9.206299\t2\tlombardia\tmi\tmilano\tvia San Gregorio, 17 – Milano (MI)\t
+78800\tGolosi di Natura\tgelateria/golosi-di-natura\t45.57875\t11.7081952\t3\tveneto\tpd\tpiazzola-sul-brenta\tvia Roma, 22 – Piazzola sul Brenta (PD)\tPremio Miglior gelato gastronomico 2020
+78801\tGelateria De' Coltelli\tgelateria/gelateria-de%c2%92-coltelli\t43.716666\t10.400562100000002\t3\ttoscana\tpi\tpisa\tl. Arno Pacinotti, 23 – Pisa (PI)\tPremio Gelatieri che hanno fatto la storia 2027
+78802\tIl Gelato di Mastro Cianuri\tgelateria/il-gelato-di-mastro-cianuri\t43.1120091\t12.3781229\t2\tumbria\tpg\tperugia\tvia R. D?Andreotto, 19m – Perugia (PG)\t
+78803\tGli Stefini Artigiani del Gelato\tgelateria/gli-stefini-artigiani-del-gelato\t39.2165916\t9.1135271\t2\tsardegna\tca\tcagliari\tvia Giuseppe Garibaldi, 194 – Cagliari (CA)\t
+78804\tIce Street\tgelateria/ice-street\t39.2373988\t9.1809002\t2\tsardegna\tca\tquartu-santelena\tv.le Colombo, 184 – Quartu Sant'Elena (CA)\t
+78806\tAmedeo\tgelateria/amedeo\t38.9068246\t16.59161\t2\tcalabria\tcz\tcatanzaro\tvia Alberghi, 10 – Catanzaro (CZ)\t
+78807\tRibera\tgelateria/ribera\t45.5330439\t10.2201621\t2\tlombardia\tbs\tbrescia\tvia XX Settembre, 64g – Brescia (BS)\t
+78808\tPaganelli\tgelateria/paganelli\t45.4830602\t9.198070400000006\t2\tlombardia\tmi\tmilano\tvia G. Fara, 14 (ang. via Adda) – Milano (MI)\t
+78809\tLa Gourmandise\tgelateria/la-gourmandise\t41.8789034\t12.4621855\t3\tlazio\trm\troma\tvia F. Cavallotti, 36/B – Roma (RM)\t
+78810\tGelateria 3 Valli\tgelateria/gelateria-3-valli\t46.2908421\t11.4620492\t2\ttrentino-alto-adige\ttn\tcavalese\tp.zza Verdi, 9 – Cavalese (TN)\t
+78811\tGelatario\tgelateria/gelatario\t41.8757262\t12.5275986\t1\tlazio\trm\troma\tvia Tuscolana, 325 – Roma (RM)\t
+78812\tGelato d'Essai da Geppy Sferra\tgelateria/gelato-dessai-da-geppy-sferra\t41.891028\t12.5602585\t2\tlazio\trm\troma\tvia Tor de' Schiavi, 295 – Roma (RM)\t
+78813\tMisciolgo\tgelateria/misciolgo\t45.4993297\t9.1652896\t1\tlombardia\tmi\tmilano\tvia B. Varchi, 4 – Milano (MI)\t
+78814\tEnrico Rizzi Milano\tpasticceria/enrico-rizzi-milano\t45.4595803\t9.1796992\t2\tlombardia\tmi\tmilano\tvia C. Correnti, 5 – Milano (MI)\t
+78817\tLa Pasqualina\tpasticceria/la-pasqualina\t45.7379442\t9.5815718\t3\tlombardia\tbg\talmenno-san-bartolomeo\tvia Papa Giovanni XXIII, 39 – Almenno San Bartolomeo (BG)\t
+78818\tdaRe\tgelateria/dare\t41.9234134\t12.5114811\t2\tlazio\trm\troma\tvia Bisagno, 17-19 – Roma (RM)\tPremio Premio sostenibilità 2025
+78819\tGelateria del Teatro\tgelateria/gelateria-del-teatro\t41.9004392\t12.4695321\t2\tlazio\trm\troma\tvia dei Coronari, 65 – Roma (RM)\t
+78820\tPallini\tgelateria/pallini\t45.6511924\t9.201920400000063\t3\tlombardia\tmb\tseregno\tvia G. Garibaldi, 70 – Seregno (MB)\t
+78821\tJurri\tcaffebar/jurri\t45.160692\t11.3496877\t2\tveneto\tvr\tlegnago\tvia XX Settembre, 18 – Legnago (VR)\tPremio Premio Innovazione 2023
+78822\tGelateria Gentile\tgelateria/gelateria-gentile\t41.128463\t16.8677433\t2\tpuglia\tba\tbari\tp.zza Federico II di Svevia, 33 – Bari (BA)\t
+78824\tSir Oliver\tgelateria/sir-oliver\t45.533011\t9.1379179\t3\tlombardia\tmi\tnovate-milanese\tvia G. Garibaldi, 31 – Novate Milanese (MI)\t
+78825\tArtico\tgelateria/artico\t45.4892475\t9.18677219999995\t3\tlombardia\tmi\tmilano\tvia L. Porro Lambertenghi, 15 – Milano (MI)\t
+78826\tMarrons Glacés\tcaffebar/marrons-glaces\t38.8200663\t16.614417499999945\t1\tcalabria\tcz\tcatanzaro\tl.mare S. Pugliese, 131 – Catanzaro (CZ)\t
+78827\tChantilly\tgelateria/chantilly\t44.9406772\t10.918867299999988\t3\tlombardia\tmn\tmoglia\tvia dell'Artigianato, 22c – Moglia (MN)\t
+78828\tBedussi\tcaffebar/bedussi\t45.5520077\t10.227892200000042\t2\tlombardia\tbs\tbrescia\tvia Crocifissa di Rosa, 113 – Brescia (BS)\t
+78829\tJazzin\tgelateria/jazzin\t45.6495712\t13.7662291\t1\tfriuli-venezia-giulia\tts\ttrieste\tvia Mercato Vecchio, 1d – Trieste (TS)\t
+78830\tGelateria Makì\tgelateria/gelateria-maki\t43.845227\t13.01748\t2\tmarche\tpu\tfano\tp.zza degli Avveduti, 1 – Fano (PU)\t
+78832\tSottozero Pennestrì\tcaffebar/sottozero-pennestri\t38.1115187\t15.6465586\t2\tcalabria\trc\treggio-calabria\tc.so Vittorio Emanuele, 83a – Reggio Calabria (RC)\tPremio Miglior gelato al cioccolato 2024
+78833\tI Vizi degli Angeli\tgelateria/i-vizi-degli-angeli\t40.666379\t16.6043199\t2\tbasilicata\tmt\tmatera\tvia Ridola, 36 – Matera (MT)\t
+78834\tAl  Gelatone\tgelateria/al-gelatone\t38.1416356\t13.3535386\t1\tsicilia\tpa\tpalermo\tvia dell?Autonomia Siciliana, 96/98 – Palermo (PA)\t
+78835\tCome il Latte\tgelateria/come-il-latte\t41.90717799999999\t12.496291799999995\t2\tlazio\trm\troma\tvia S. Spaventa, 24 – Roma (RM)\t
+78836\tSan Giuda\tgelateria/san-giuda\t45.42021159999999\t9.258759999999999\t2\tlombardia\tmi\tsan-donato-milanese\tp.le Supercortemaggiore, 2 – San Donato Milanese (MI)\t
+78837\tPappus Gelateria Artigianale\tgelateria/pappus-gelateria-artigianale\t44.20586\t8.41552\t2\tliguria\tsv\tnoli\tvia Cristoforo Colombo, 12 – Noli (SV)\t
+78838\tL' Albero dei gelati\tgelateria/l-albero-dei-gelati\t45.5893361\t9.2617991\t3\tlombardia\tmb\tmonza\tvia G. Sirtori, 1 – Monza (MB)\tPremio Miglior gelato gastronomico 2022
+78839\tDolce Puro\tgelateria/dolce-puro\t45.4776366\t11.9286538\t1\tveneto\tpd\tcampodarsego\tp.zza San Martino, 1 – Campodarsego (PD)\t
+78840\tGalatea\tcaffebar/galatea\t38.1985019\t13.3183073\t1\tsicilia\tpa\tpalermo\tvia Carbone, 3 – Palermo (PA)\t
+78841\tGelateria degli Angeli\tgelateria/gelateria-degli-angeli\t44.8279629\t11.611571200000071\t1\temilia-romagna\tfe\tferrara\tvia Bologna, 128b – Ferrara (FE)\t
+78842\tMastroGelato\tgelateria/mastrogelato\t43.30149979999999\t13.443618600000036\t2\tmarche\tmc\tmacerata\tc.so Cavour, 72 – Macerata (MC)\t
+78844\tOttimo! Buono non basta\tgelateria/ottimo-buono-non-basta\t45.0613558\t7.675214200000028\t3\tpiemonte\tto\ttorino\tc.so Stati Uniti, 6c – Torino (TO)\tPremio Miglior gelato gastronomico 2021
+78845\tLa Casa del Dolce\tgelateria/la-casa-del-dolce\t45.6068097\t10.530390200000056\t1\tlombardia\tbs\tsalo\tp.zza Duomo, 1 – Salò (BS)\t
+78846\tCremeria Opera\tgelateria/cremeria-opera\t43.8400689\t10.483273499999996\t2\ttoscana\tlu\tlucca\tvia G. Luporini, 951 – Lucca (LU)\t
+78847\tDulcinea Gelateria\tgelateria/dulcinea-gelateria\t43.0161533\t12.535785499999974\t2\tumbria\tpg\tbettona\tvia Perugia, 145 – Bettona (PG)\t
+78848\tSorbetteria Crème Glacée\tgelateria/sorbetteria-creme-glacee\t42.9191644\t13.88916560000007\t2\tmarche\tap\tsan-benedetto-del-tronto\tvia L. Gabrielli, 8 – San Benedetto del Tronto (AP)\t
+78849\tLa Vela\tgelateria/la-vela\t38.16486\t13.36919\t2\tsicilia\tpa\tpalermo\tp.zza Bordonaro, 10 – Palermo (PA)\t
+78850\tCasa Mastroianni\tgelateria/casa-mastroianni\t38.9663586\t16.280135200000018\t2\tcalabria\tcz\tlamezia-terme\tvia San Rocco, 19 – Lamezia Terme (CZ)\t
+78851\tBloom\tgelateria/bloom\t44.6463644\t10.927564699999948\t3\temilia-romagna\tmo\tmodena\tp.zza Mazzini, 42 – Modena (MO)\t
+78853\tProfumo\tgelateria/profumo\t44.4101465\t8.93404129999999\t3\tliguria\tge\tgenova\tvico Superiore del Ferro, 14 – Genova (GE)\t
+78854\tCremeria Capolinea\tgelateria/cremeria-capolinea\t44.6910241\t10.633186499999965\t3\temilia-romagna\tre\treggio-emilia\tv.le E. Simonazzi, 14 – Reggio Emilia (RE)\t
+78855\tLatteNeve\tgelateria/latteneve\t45.4529447\t9.17265580000003\t2\tlombardia\tmi\tmilano\tvia Vigevano, 27 – Milano (MI)\t
+78856\tCiacco\tgelateria/ciacco-2\t45.46382\t9.18665\t3\tlombardia\tmi\tmilano\tvia Spadari, 13 – Milano (MI)\t
+78859\tDolce Arte\tpasticceria/dolce-arte\t40.12787\t18.200849999999946\t2\tpuglia\tle\tcutrofiano\tvia G. Garibaldi, 31 – Cutrofiano (LE)\tPremio Miglior gelato gastronomico 2024
+78860\tVincenzo Barbero\tcaffebar/vincenzo-barbero\t44.904196\t8.1881577\t2\tpiemonte\tat\tasti\tc.so Torino, 231a – Asti (AT)\t
+78861\tArmonia e Poesia\tgelateria/armonia-e-poesia\t42.08841\t11.802147999999988\t2\tlazio\trm\tcivitavecchia\tvia Bramante, 48 – Civitavecchia (RM)\t
+78862\tPavé - Gelati & Granite\tgelateria/pave-gelati-granite\t45.4628224\t9.200611200000026\t3\tlombardia\tmi\tmilano\tvia C. Battisti, 21 – Milano (MI)\t
+78864\tAdamo\tcaffebar/adamo\t36.8597136\t14.761879499999964\t2\tsicilia\trg\tmodica\tvia Marchesa Tedeschi, 15 – Modica (RG)\t
+78868\tVassalli\tgelateria/vassalli\t45.55222\t10.507380000000012\t1\tlombardia\tbs\tpolpenazze-del-garda\tvia G. Zanardelli, 7 – Polpenazze del Garda (BS)\t
+78869\tGelateria Ciocolat\tgelateria/gelateria-ciocolat\t45.6380563\t10.607095100000038\t2\tlombardia\tbs\ttoscolano-maderno\tvia Statale, 130 – Toscolano-Maderno (BS)\t
+78870\tIl Mondo di Mezzo\tgelateria/il-mondo-di-mezzo\t45.652209\t9.364876999999979\t2\tlombardia\tmb\tusmate-velate\tvia Roma, 50 – Usmate Velate (MB)\t
+78871\tMille\tgelateria/mille\t45.32577999999999\t10.075410000000034\t3\tlombardia\tbs\tverolanuova\tp.zza Libertà, 30 – Verolanuova (BS)\t
+78872\tPappa Reale\tgelateria/pappa-reale\t45.15432759999999\t10.78600240000003\t1\tlombardia\tmn\tmantova\tvia Chiassi, 89 – Mantova (MN)\t
+78874\tPacifico\tgelateria/pacifico\t44.6747432\t10.63602160000005\t2\temilia-romagna\tre\treggio-emilia\tvia G. Franzini, 2 – Reggio Emilia (RE)\t
+78875\tAgrigelateria San Pé\tgelateria/agrigelateria-san-pe\t45.0314278\t7.651743799999963\t2\tpiemonte\tto\ttorino\tvia Nizza, 230 c/o Eataly Lingotto – Torino (TO)\t
+78876\t+ Di Un Gelato\tgelateria/di-un-gelato\t45.0695018\t7.6857405\t2\tpiemonte\tto\ttorino\tvia C. Battisti, 7 F – Torino (TO)\t
+78877\tGelateria Popolare\tgelateria/gelateria-popolare\t45.0786757\t7.683912200000009\t2\tpiemonte\tto\ttorino\tvia G. Mameli, 6 – Torino (TO)\t
+78878\tGusto 17\tgelateria/gusto-17\t45.455192\t9.167682499999955\t2\tlombardia\tmi\tmilano\tvia Savona, 17 – Milano (MI)\t
+78879\tCascina Roseleto Gelateria Contadina\tgelateria/cascina-roseleto-gelateria-contadina\t45.047645\t7.676094599999942\t2\tpiemonte\tto\ttorino\tvia Madama Cristina, 121 – Torino (TO)\t
+78880\tCremeria Buonafede\tgelateria/cremeria-buonafede\t44.409476\t8.932942499999967\t1\tliguria\tge\tgenova\tvia Luccoli, 12r – Genova (GE)\t
+78881\tSoban\tgelateria/soban\t45.0112831\t8.643146800000068\t3\tpiemonte\tal\tvalenza\tp.zza A. Gramsci, 23 – Valenza (AL)\t
+78882\tL' Essenza del Gelato\tgelateria/l-essenza-del-gelato\t45.0669361\t7.689903400000048\t2\tpiemonte\tto\ttorino\tvia Principe Amedeo, 21f – Torino (TO)\t
+78883\tCremeria Spinola\tgelateria/cremeria-spinola\t44.31746099999999\t9.31505489999995\t3\tliguria\tge\tchiavari\tc.so Valparaiso, 118 – Chiavari (GE)\t
+78884\tCremeria Sestri\tgelateria/cremeria-sestri\t44.4246899\t8.850417900000025\t2\tliguria\tge\tgenova\tvia G. Donizetti, 34r – Genova (GE)\t
+78885\tGelato Dok\tgelateria/gelato-dok\t45.02279\t7.635870000000068\t2\tpiemonte\tto\ttorino\tc.so Unione Sovietica, 415 – Torino (TO)\t
+78886\t100% Naturale\tgelateria/100-naturale\t44.2704117\t9.393812400000002\t2\tliguria\tge\tsestri-levante\tvia XXV Aprile, 126 – Sestri Levante (GE)\tPremio Miglior gelato gastronomico 2027
+78888\tParlapà\tgelateria/parlapa\t44.6982882\t8.034424700000045\t2\tpiemonte\tcn\talba\tvia Vittorio Emanuele, 36 – Alba (CN)\t
+78889\tGasprin dal 1929\tgelateria/gasprin-dal-1929\t45.00025\t7.684729999999945\t2\tpiemonte\tto\tmoncalieri\tp.zza Vittorio Emanuele II, 8 – Moncalieri (TO)\t
+78891\tLa Tosca\tgelateria/la-tosca\t45.0802711\t7.659713600000032\t3\tpiemonte\tto\ttorino\tvia L. Cibrario, 50 – Torino (TO)\t
+78892\tC'era una volta\tgelateria/cera-una-volta\t41.1290097\t14.776557899999943\t2\tcampania\tbn\tbenevento\tp.zza Castello, 1 – Benevento (BN)\t
+78893\tSnoopy\tgelateria/snoopy\t45.382619\t11.040442999999982\t2\tveneto\tvr\tsan-giovanni-lupatoto\tvia Cà dei Sordi, 37 – San Giovanni Lupatoto (VR)\t
+78894\tLa Svolta\tgelateria/la-svolta\t42.8052105\t10.1999028\t2\ttoscana\tli\telba\tvia Cairoli, 6 – Elba (LI)\t
+78896\tGelateria della Passera\tgelateria/gelateria-della-passera\t43.7695604\t11.25581360000001\t3\ttoscana\tfi\tfirenze\tvia Toscanella, 15r – Firenze (FI)\tPremio Valorizzazione delle produzioni territoriali 2024
+78897\tChiccheria\tgelateria/chiccheria\t42.7644056\t11.11542499999996\t2\ttoscana\tgr\tgrosseto\tvia Piave, 14 – Grosseto (GR)\t
+78898\tGretel Factory\tgelateria/gretel-factory\t41.2589103\t13.613068099999964\t3\tlazio\tlt\tformia\tvia Abate Tosti, 51 – Formia (LT)\t
+78899\tIl  Gelato Aresu\tgelateria/il-gelato-aresu\t39.22247309999999\t9.122787099999982\t2\tsardegna\tca\tcagliari\tvia V. Monti, 58 – Cagliari (CA)\t
+78900\tTonka\tgelateria/tonka\t41.5998336\t12.652095000000031\t3\tlazio\tlt\taprilia\tvia U. Foscolo, 15 – Aprilia (LT)\tPremio Valorizzazione delle produzione locali 2023
+78901\tOggi Gelato\tgelateria/oggi-gelato\t46.06357819999999\t13.233245099999976\t2\tfriuli-venezia-giulia\tud\tudine\tvia P. Sarpi, 3a – Udine (UD)\t
+78902\tGelati d'Antan\tgelateria/gelati-dantan\t45.0803339\t7.649451900000031\t3\tpiemonte\tto\ttorino\tvia N. Fabrizi, 37c – Torino (TO)\t
+78903\tCremeria Bar Torre\tgelateria/cremeria-bar-torre\t45.08391510000001\t7.710690099999965\t2\tpiemonte\tto\ttorino\tc.so Regio Parco, 28a – Torino (TO)\t
+78905\tCiro & Pio\tgelateria/ciro-pio\t43.5221155\t13.240091600000028\t1\tmarche\tan\tjesi\tv.le della Vittoria,89 – Jesi (AN)\t
+78906\tAlice Il Gelato delle Meraviglie\tgelateria/alice-il-gelato-delle-meraviglie\t43.9151382\t12.91601479999997\t1\tmarche\tpu\tpesaro\tv.le Trieste, 210 – Pesaro (PU)\t
+78907\tPaolo Brunelli\tgelateria/paolo-brunelli\t43.7165279\t13.21749699999998\t3\tmarche\tan\tsenigallia\tvia G. Carducci, 7 – Senigallia (AN)\t
+78908\tCremeria Santo Stefano\tgelateria/cremeria-santo-stefano\t44.48816\t11.35225\t3\temilia-romagna\tbo\tbologna\tvia Santo Stefano, 70 – Bologna (BO)\t
+78909\tA Modo Mio\tgelateria/a-modo-mio\t42.4716978\t14.209697799999958\t2\tabruzzo\tpe\tpescara\tvia Trento, ang. via Fabrizi, 209 – Pescara (PE)\t
+78911\tDolci Sfizi\tgelateria/dolci-sfizi\t40.2652829\t8.772140000000036\t3\tsardegna\tnu\tmacomer\tvia P. Nenni, 5 – Macomer (NU)\t
+78912\tGelateria Naturale Scaldaferro\tgelateria/gelateria-naturale-scaldaferro\t45.4274772\t12.09309810000002\t3\tveneto\tve\tdolo\tvia Ca' Tron, 33 – Dolo (VE)\t
+78914\tCrema e Latte\tgelateria/crema-e-latte\t42.4172843\t12.346682399999963\t1\tlazio\tvt\tvasanello\tp.zza della Repubblica, 11 – Vasanello (VT)\t
+78915\tGalliera 49\tgelateria/galliera-49\t44.5002681\t11.34310640000001\t2\temilia-romagna\tbo\tbologna\tvia Galliera, 49b – Bologna (BO)\t
+78916\tEmilio\tgelateria/emilio\t39.989306\t15.707078000000024\t3\tbasilicata\tpz\tmaratea\tvia Racia, 12 – Maratea (PZ)\t
+78917\tIl Teatro del Gelato\tgelateria/il-teatro-del-gelato\t44.791615\t11.38704800000005\t3\temilia-romagna\tfe\tsantagostino\tp.zza S. Pertini, 2 – Sant'Agostino (FE)\tPremio Miglior gelato gastronomico 2025
+78918\tLeoni\tgelateria/leoni\t44.1396438\t12.246429199999966\t1\temilia-romagna\tfc\tcesena\tvia Savio, 562 – Cesena (FC)\t
+78919\tDa Nonno Piero\tgelateria/da-nonno-piero\t45.3469606\t11.86758\t2\tveneto\tpd\talbignasego\tvia Roma, 222 – Albignasego (PD)\t
+78920\tGelateria Giotto\tgelateria/gelateria-giotto\t45.403914\t11.875769\t2\tveneto\tpd\tpadova\tvia Roma, 97 – Padova (PD)\t
+78921\tChocolat\tgelateria/chocolat\t45.4928856\t12.2424469\t3\tveneto\tve\tmestre\tvia G. Allegri, 27 – Mestre (VE)\t
+78922\tNivera - Il gelato di natura\tgelateria/nivera-il-gelato-di-natura\t36.7935748\t14.706205100000034\t2\tsicilia\trg\tscicli\tvia  F. Mormina Penna, 14 – Scicli (RG)\t
+78923\tRaki\tgelateria/raki\t40.6259396\t14.373151099999973\t2\tcampania\tna\tsorrento\tc.so Italia, 96 – Sorrento (NA)\t
+78924\tTorcè\tgelateria/torce\t41.82638\t12.47735\t3\tlazio\trm\troma\tv.le dell'Arte, 9/A – Roma (RM)\t
+78927\tIl Dolce Sogno\tgelateria/il-dolce-sogno\t45.6045628\t8.861118199999964\t3\tlombardia\tva\tbusto-arsizio\tv.le V. Alfieri, 28 – Busto Arsizio (VA)\t
+78928\tGelato  San Lorenzo\tgelateria/gelato-san-lorenzo\t41.897059\t12.511963299999934\t2\tlazio\trm\troma\tvia Tiburtina, 6 – Roma (RM)\t
+78930\tLiparoti\tgelateria/liparoti\t38.0175367\t12.500530799999979\t3\tsicilia\ttp\ttrapani\tv.le delle Sirene, 21 – Trapani (TP)\t
+78931\tCasa Marchetti\tgelateria/casa-marchetti\t45.0665686\t7.681578800000011\t3\tpiemonte\tto\ttorino\tp.zza C.L.N., 248 – Torino (TO)\tPremio Gelatieri che hanno fatto la storia 2027
+78932\tCioccolateria Robbiano\tgelati/cioccolateria-robbiano\t45.703318\t7.168477999999999\t2\tvalle-daosta\tao\tarvier\tvia C. Gex, 23 – Arvier (AO)\t
+78933\tNivà\tgelateria/niva\t45.064916\t7.68214660000001\t3\tpiemonte\tto\ttorino\tp.zza Vittorio Veneto, 8 – Torino (TO)\t
+78934\tProssima Fermata\tgelateria/prossima-fermata\t45.4939577\t9.2058574\t2\tlombardia\tmi\tmilano\tvia M. Gioia, 131 – Milano (MI)\t
+78935\tBasilico e Limone\tgelateria/basilico-e-limone\t44.1697079\t9.60955469999999\t2\tliguria\tsp\tlevanto\tvia G. Mazzini, 9 – Levanto (SP)\t
+78936\tIl Gelato di Barbara\tgelateria/il-gelato-di-barbara\t45.4688222\t9.511931699999991\t2\tlombardia\tcr\trivolta-dadda\tvia M. Cereda, 50 – Rivolta d'Adda (CR)\t
+78937\tMarco Serra Gelatiere\tgelateria/marco-serra-gelatiere\t44.9061525\t7.674348000000009\t3\tpiemonte\tto\tcarignano\tvia Trento, 8 – Carignano (TO)\t
+78938\tL' Arte di Mauro\tgelateria/l-arte-di-mauro\t45.4933999\t12.109517299999993\t2\tveneto\tve\tmirano\tp.zza Martiri della Libertà,15 – Mirano (VE)\t
+78939\tGelateria Bosisio Passione Bio\tgelateria/gelateria-bosisio-passione-bio\t40.7242817\t8.561307299999953\t2\tsardegna\tss\tsassari\tvia Cavour, 26 – Sassari (SS)\t
+78940\tIl Gusto Giusto\tgelateria/il-gusto-giusto\t42.9245622\t10.52866670000003\t2\ttoscana\tli\tpiombino\tp.zza A. Gramsci, 11 – Piombino (LI)\t
+78941\tCaprilli\tgelateria/caprilli\t43.53807459999999\t10.302478800000017\t1\ttoscana\tli\tlivorno\tvia dei Funaioli, 2 – Livorno (LI)\t
+78942\tD'Ambrosio Gelateria Naturale\tgelateria/dambrosio-gelateria-naturale\t45.9453419\t13.173760000000016\t2\tfriuli-venezia-giulia\tud\tmortegliano\tvia Udine, 19 – Mortegliano (UD)\t
+78943\tEssenza\tgelateria/essenza\t45.6960911\t9.839452599999959\t1\tlombardia\tbg\ttrescore-balneario\tvia A. Volta, 5 – Trescore Balneario (BG)\t
+78944\tMichel\tgelateria/michel\t41.948509\t16.013075999999955\t3\tpuglia\tfg\tpeschici\tp.zza del Popolo, 5 – Peschici (FG)\t
+78947\tIl Gelataio Valdagno\tgelateria/il-gelataio-valdagno\t45.5457776\t11.518328800000063\t1\tveneto\tvi\tvaldagno\tp.zza Roma, 5 – Valdagno (VI)\t
+78949\tAmandola\tgelateria/amandola\t42.9684406\t12.693078000000014\t2\tumbria\tpg\tfoligno\tv.le Firenze, 138a – Foligno (PG)\t
+78950\tGelati  Crispini\tgelateria/gelati-crispini\t42.7417349\t12.73809749999998\t3\tumbria\tpg\tspoleto\tv.le Trento e Trieste, 29 – Spoleto (PG)\t
+78951\tSanto Musumeci\tpasticceria/santo-musumeci\t37.8788643\t14.948895600000014\t3\tsicilia\tct\trandazzo\tp.zza Santa Maria, 9 – Randazzo (CT)\tPremio La Gelateria dell'Anno 2027
+78952\tCaffè del Duomo\tgelateria/caffe-del-duomo\t41.291673\t13.248599000000013\t2\tlazio\tlt\tterracina\tp.zza del Municipio, 18 – Terracina (LT)\t
+78954\tCremeria Gori\tgelateria/cremeria-gori\t42.74438660000001\t10.3796523\t2\ttoscana\tli\telba\tvia P. Gori, 28 – Elba (LI)\t
+78955\tMincuccio\tgelateria/mincuccio\t40.5794688\t17.037245100000064\t2\tpuglia\tta\tpalagiano\tl.go C. Colombo, 1 – Palagiano (TA)\t
+78956\tGelatomania\tgelateria/gelatomania-2\t44.2285101\t12.052482000000055\t2\temilia-romagna\tfc\tforli\tvia Ravegnana, 208 – Forlì (FC)\t
+78958\tGelateria  Dalla Corte\tgelateria/gelateria-dalla-corte\t46.01913\t11.89391\t2\tveneto\tbl\tfeltre\tvia D. Alighieri, 5 – Feltre (BL)\t
+78959\tBar Aterno Gelateria\tgelateria/bar-aterno-gelateria\t42.1023837\t13.813314200000036\t1\tabruzzo\taq\traiano\tvia della Repubblica, 22 – Raiano (AQ)\t
+78961\tGelaterie Duomo - Il Paradiso del Gelato\tgelateria/gelaterie-duomo-il-paradiso-del-gelato\t42.3487072\t13.398032199999989\t3\tabruzzo\taq\tlaquila\tp.zza Duomo, 32 – L'Aquila (AQ)\t
+78962\tRolando\tgelateria/rolando\t42.825547\t13.71681000000001\t2\tabruzzo\tte\tsantegidio-alla-vibrata\tc.so Matteotti, 11 – Sant'Egidio alla Vibrata (TE)\t
+78963\tmaCam\tgelateria/macam\t45.4468048\t8.617976799999951\t2\tpiemonte\tno\tnovara\tc.so Italia, 40e – Novara (NO)\t
+78965\tColalucci\tgelateria/colalucci\t41.458072\t12.658509999999978\t2\tlazio\trm\tnettuno\tp.zza del Mercato, 13 – Nettuno (RM)\t
+78966\tGunther Gelato Italiano\tgelateria/gunther-gelato-italiano\t41.8932006\t12.472028200000068\t1\tlazio\trm\troma\tvia dei Pettinari, 43 – Roma (RM)\t
+78967\tVeroLatte\tgelateria/verolatte\t45.31678\t8.858661999999981\t2\tlombardia\tpv\tvigevano\tvia XX Settembre, 2 – Vigevano (PV)\t
+78968\tLatteria Gelati Cremosi\tgelateria/latteria-gelati-cremosi\t38.1346056\t13.34668720000002\t1\tsicilia\tpa\tpalermo\tvia L. Ariosto, 20 – Palermo (PA)\t
+78969\tGelato  Cesare\tgelateria/gelato-cesare\t38.1142957\t15.650178600000004\t3\tcalabria\trc\treggio-calabria\tp.zza Indipendenza, 2 – Reggio Calabria (RC)\t
+78971\tAccademia 64\tgelateria/accademia-64\t45.488468735562904\t9.227981284655698\t1\tlombardia\tmi\tmilano\tvia Accademia, 64 – Milano (MI)\t
+78972\tGnomo Gelato\tgelateria/gnomo-gelato\t45.46711029999999\t9.159203700000035\t3\tlombardia\tmi\tmilano\tvia F. Cherubini, 3 – Milano (MI)\tPremio Miglior gelato al cioccolato 2020
+78974\tVoglia di...\tcaffebar/voglia-di\t42.9414301\t13.88649959999998\t2\tmarche\tap\tsan-benedetto-del-tronto\tvia G. Voltattorni, 105 – San Benedetto del Tronto (AP)\t
+78976\tBaldo Gelato\tgelateria/baldo-gelato\t40.3557772\t18.172490700000026\t2\tpuglia\tle\tlecce\tvia Idomeneo, 78 – Lecce (LE)\t
+78980\tBar De Luca\tgelateria/bar-de-luca\t38.0870916\t15.498386600000003\t2\tsicilia\tme\tmessina\tvia Nazionale, 208 – Messina (ME)\t
+78982\tI Gemelli\tgelateria/i-gemelli\t41.848984\t12.487830799999983\t1\tlazio\trm\troma\tvia Fonte Buono, 114 – Roma (RM)\t
+78984\tFamily Cremeria Artigianale\tgelateria/family-cremeria-artigianale\t41.8786187\t12.448783899999967\t1\tlazio\trm\troma\tl.go G. Bilancioni, 3 – Roma (RM)\t
+78986\tNonna Papera\tgelateria/nonna-papera\t45.7306623\t9.12698279999995\t2\tlombardia\tco\tcantu\tvia Borgognone, 38 – Cantù (CO)\t
+78987\tMil Sabores\tgelateria/mil-sabores\t44.99609359999999\t9.7880719\t2\temilia-romagna\tpc\tpontenure\tv.le L. Da Vinci, 15 – Pontenure (PC)\t
+78988\tG&co\tgelateria/gco\t39.9313396\t18.36175120000007\t3\tpuglia\tle\ttricase\tvia Marina Porto, 3 – Tricase (LE)\tPremio Premio sostenibilità 2021
+78990\tArte Gelata\tgelateria/arte-gelata\t40.89129810000001\t16.7669709\t1\tpuglia\tba\tcassano-delle-murge\tv.le Unità d'Italia, 14 – Cassano delle Murge (BA)\t
+78991\tIl Bassotto\tgelateria/il-bassotto\t43.52508\t13.61779\t1\tmarche\tan\tosimo\tvia Campana, 5 – Osimo (AN)\t
+78992\tJoia Gelateria Naturale\tgelateria/joia-gelateria-naturale\t44.5767585\t10.8479753\t2\temilia-romagna\tmo\tformigine\tvia Trento e Trieste, 112 – Formigine (MO)\t
+78994\tPunto Gelato\tgelateria/punto-gelato\t43.4614059\t11.87804970000002\t1\ttoscana\tar\tarezzo\tvia G. Verdi, 15 – Arezzo (AR)\t
+78995\tCappadonia Gelati\tgelateria/cappadonia-gelati\t38.1147087\t13.359041\t3\tsicilia\tpa\tpalermo\tvia Vittorio Emanuele, 401 – Palermo (PA)\tPremio Gelatieri che hanno fatto la storia 2027
+78996\tBar Concetti\tgelateria/bar-concetti\t43.0980174\t13.84009279999998\t1\tmarche\tfm\tpedaso\ts.da prov.le 238 (p.zza Roma, 31) – Pedaso (FM)\t
+78998\tIl Signor di Carbognano\tgelateria/il-signor-di-carbognano\t38.133449\t13.348913000000039\t2\tsicilia\tpa\tpalermo\tvia E. Notarbartolo, 2/L – Palermo (PA)\t
+78999\tGelateria Biologica  Santa Colomba\tgelateria/gelateria-biologica-santa-colomba\t44.0608994\t12.564562300000034\t1\temilia-romagna\trn\trimini\tp.zza Malatesta, 35 – Rimini (RN)\t
+79004\tL' Artigianale\tgelateria/l-artigianale\t36.7303355\t14.85701240000003\t2\tsicilia\trg\tpozzallo\tl.mare Pietrenere, 31 – Pozzallo (RG)\tPremio Valorizzazione delle produzioni territoriali 2024
+79005\tSikè Gelato\tgelateria/sike-gelato\t38.2221717\t15.2429334\t3\tsicilia\tme\tmilazzo\tvia F. Crispi, 81 – Milazzo (ME)\t
+79006\tGusto\tgelateria/gusto\t37.0599964\t15.2945929\t2\tsicilia\tsr\tsiracusa\tvia Roma, 39 – Siracusa (SR)\t
+79007\tGelateria il Castello\tgelateria/gelateria-il-castello\t44.0591175\t12.562814000000003\t1\temilia-romagna\trn\trimini\tvia D. Campana, 1 – Rimini (RN)\t
+79008\tBuonocore\tgelateria/buonocore\t40.5505258\t14.2436099\t2\tcampania\tna\tcapri\tvia Vittorio Emanuele, 35 – Capri (NA)\t
+79009\tSunflower\tgelateria/sunflower\t43.4650551\t11.8806919\t2\ttoscana\tar\tarezzo\tp.zza San Francesco, 11 – Arezzo (AR)\t
+79011\tLagelaterianaturale Orazio 74\tgelateria/lagelaterianaturale-orazio-74\t40.1222713\t18.3009244\t2\tpuglia\tle\tmaglie\tvia G. Pisanelli, 18 – Maglie (LE)\t
+79012\tGiuffrè Forno&Gelato\tgelateria/giuffre-fornogelato\t41.8755266\t12.466026300000067\t2\tlazio\trm\troma\tv.le di Trastevere, 255 – Roma (RM)\t
+79013\tI Fenu Gelateria e Pasticceria\tgelateria/i-fenu-gelateria-e-pasticceria\t39.2202834\t9.122577\t3\tsardegna\tca\tcagliari\tp.zza G. Galilei, 35 – Cagliari (CA)\t
+79014\tMaglio\tcioccolato/maglio\t40.1195555\t18.2998703\t2\tpuglia\tle\tmaglie\tvia San Giuseppe, 46 – Maglie (LE)\t
+79015\tTerra Gelato\tgelateria/terra-gelato\t45.4827165\t9.2064643\t3\tlombardia\tmi\tmilano\tvia Vitruvio, 38 – Milano (MI)\t
+79016\tLa Riserva della Neve\tgelateria/la-riserva-della-neve\t41.9153722\t12.453354200000035\t2\tlazio\trm\troma\tp.le Clodio, 23 – Roma (RM)\t
+79018\tPico\tgelateria/pico\t41.91774119999999\t12.5197306\t1\tlazio\trm\troma\tl.go XXI aprile, 1 – Roma (RM)\t
+79019\tGelateria Bar Temptations\tcaffebar/gelateria-bar-temptations\t45.41677\t11.24234\t2\tveneto\tvr\tsoave\tvia San Matteo, 66c – Soave (VR)\t
+79020\tGlida Gelateria Naturale\tgelateria/glida-gelateria-naturale\t45.9395242\t13.6139569\t2\tfriuli-venezia-giulia\tgo\tgorizia\tc.so Italia, 130 – Gorizia (GO)\t
+79021\tGelateria Cavallar\tgelateria/gelateria-cavallar\t46.408376\t11.137598\t1\ttrentino-alto-adige\ttn\tcavareno\tp.zza PM Borzaga, 8 – Cavareno (TN)\t
+79023\tGelateria  Moou\tgelateria/gelateria-moou\t45.0980625\t7.699172499999999\t2\tpiemonte\tto\ttorino\tvia N. Porpora, 55 – Torino (TO)\tPremio Premio sostenibilità 2022
+79024\tCasa Clara\tgelateria/casa-clara\t45.1008779\t7.667221199999999\t2\tpiemonte\tto\ttorino\tvia Stradella, 187d – Torino (TO)\t
+79026\tMaritozzi e Gelato di Barbara e Renato\tgelateria/maritozzi-e-gelato-di-barbara-e-renato\t44.4946674\t11.3344183\t3\temilia-romagna\tbo\tbologna\tp.zza San Francesco, 1b – Bologna (BO)\t
+79027\tAvgvsto Premiata Gelateria\tgelateria/avgvsto-premiata-gelateria\t45.4564816\t9.1702288\t1\tlombardia\tmi\tmilano\tv.le Coni Zugna, 54 – Milano (MI)\t
+79028\tGelart\tgelateria/gelart-2\t45.5335761\t9.2302653\t1\tlombardia\tmi\tsesto-san-giovanni\tvia G. Marconi, 9 – Sesto San Giovanni (MI)\t
+79029\tMassimiliano Chiumeo Gelateria\tgelateria/massimiliano-chiumeo-gelateria\t44.3841982\t9.0319761\t2\tliguria\tge\tgenova\tvia G. Oberdan, 75r – Genova (GE)\t
+79030\tGelatina\tgelateria/gelatina\t44.411376\t8.9317525\t3\tliguria\tge\tgenova\tvia Garibaldi, 20r – Genova (GE)\tPremio Gelatiere emergente 2020
+79031\tGelateria Ivana\tgelateria/gelateria-ivana\t45.60066200000001\t7.796632\t2\tvalle-daosta\tao\tpont-saint-martin\tp.zza I Maggio, 8 – Pont-Saint-Martin (AO)\t
+79032\tStella Marina Alta Gelateria\tgelateria/stella-marina-alta-gelateria\t44.1050362\t9.820949599999999\t2\tliguria\tsp\tla-spezia\tvia G. Sforza, 15 – La Spezia (SP)\t
+79034\t-16° Artigiani del Gelato\tgelateria/16-artigiani-del-gelato\t45.5699641\t9.0269789\t2\tlombardia\tmi\tlainate\tv.le Rimembranze, 14 – Lainate (MI)\t
+79036\tBasium\tgelateria/basium\t43.3083833\t13.7303391\t2\tmarche\tmc\tcivitanova-marche\tvia G. Matteotti, 14 – Civitanova Marche (MC)\t
+79037\tL' Officina Gelato & Bakery\tgelateria/l-officina-gelato-bakery\t41.7998104\t12.4295951\t2\tlazio\trm\troma\tv.le A. Galleppini, 13 – Roma (RM)\t
+79038\tLa Gelateria di Giulio\tgelateria/la-gelateria-di-giulio\t41.8554665\t12.4195882\t1\tlazio\trm\troma\tvia della Casetta Mattei, 145 a/b – Roma (RM)\t
+79039\tLenci in Darsena\tgelateria/lenci-in-darsena\t41.7688995\t12.2258208\t2\tlazio\trm\tfiumicino\tv.le Traiano, 133 – Fiumicino (RM)\t
+79040\tGelateria Quattrini\tgelateria/gelateria-quattrini\t43.6016059\t13.3252829\t3\tmarche\tan\tfalconara-marittima\tp.zza G. Mazzini, 8 – Falconara Marittima (AN)\tPremio Gelatiere emergente 2022
+79042\tPicchio Gelateria Naturale\tgelateria/picchio-gelateria-naturale\t42.1038979\t12.1776374\t2\tlazio\trm\tbracciano\tvia della Collegiata, 2 – Bracciano (RM)\t
+79043\tPina Gel\tgelateria/pina-gel\t41.9469484\t16.0139418\t2\tpuglia\tfg\tpeschici\tc.so Umberto I, 7 – Peschici (FG)\t
+79044\tMokambo Gelateria\tgelateria/mokambo-gelateria\t41.118591\t16.483253\t3\tpuglia\tba\truvo-di-puglia\tvia N. Rosselli, 29 – Ruvo di Puglia (BA)\t
+79046\tIl Regno del Gelato\tgelateria/il-regno-del-gelato\t38.8460796\t16.3799492\t2\tcalabria\tcz\tjacurso\tvia Nazionale, 81 – Jacurso (CZ)\t
+79047\tCrema Alta Gelateria\tgelateria/crema-alta-gelateria\t45.4808868\t9.1604194\t2\tlombardia\tmi\tmilano\tvia Giovanni da Procida, 29 – Milano (MI)\tPremio La novità dell'anno 2021
+79048\tMara dei Boschi\tgelateria/mara-dei-boschi\t45.0580302\t7.683996699999966\t3\tpiemonte\tto\ttorino\tp.zza C. Emanuele II, 21 – Torino (TO)\t
+79050\tBuono e Sano\tgelateria/buono-e-sano\t45.3309001\t7.724529599999999\t2\tpiemonte\tto\trivarolo-canavese\tc.so Torino, 57 – Rivarolo Canavese (TO)\t
+79051\tGolosia\tgelateria/golosia\t45.0066146\t7.541918399999999\t2\tpiemonte\tto\torbassano\tvia Montessori, 8a – Orbassano (TO)\t
+79052\tGelateria Antoniazzi\tgelateria/gelateria-antoniazzi\t45.6765507\t13.3891402\t2\tfriuli-venezia-giulia\tgo\tgrado\tvia D. Alighieri, 23 – Grado (GO)\t
+79053\tOfficine del gusto\tgelateria/officine-del-gusto\t40.5740427\t15.7846371\t3\tbasilicata\tpz\tpignola\tvia G. Marconi, 21 – Pignola (PZ)\tPremio Miglior gelato al cioccolato 2021
+79057\tGelateria Caruso\tgelateria/gelateria-caruso\t40.6411627\t15.7898211\t2\tbasilicata\tpz\tpotenza\tvia Unità d'Italia, 67 – Potenza (PZ)\t
+79058\tI Giardini di Marzo\tgelateria/i-giardini-di-marzo\t44.3594657\t8.5781484\t2\tliguria\tsv\tvarazze\tp.zza Dante Alighieri, 28 – Varazze (SV)\t
+79059\tPortogallo\tgelateria/portogallo\t45.400582\t11.8759715\t2\tveneto\tpd\tpadova\tvia Umberto I, 101 – Padova (PD)\t
+79060\tOrto Gelato\tgelateria/orto-gelato\t45.5077289\t9.2033474\t1\tlombardia\tmi\tmilano\tvia S. Pianell, 45 – Milano (MI)\t
+79061\tMagritte - Gelati al cubo\tgelateria/magritte-gelati-al-cubo\t44.86710679999999\t10.0589863\t3\temilia-romagna\tpr\tfidenza\tvia Cavour, 72 – Fidenza (PR)\tPremio Gelatiere emergente 2021
+79062\tSchiavon Gelato\tgelateria/schiavon-gelato\t44.4803963\t11.3630022\t2\temilia-romagna\tbo\tbologna\tvia A. Murri, 81c – Bologna (BO)\t
+79063\tL' Emporio del Gelato\tgelateria/l-emporio-del-gelato\t44.4785964\t11.3673296\t1\temilia-romagna\tbo\tbologna\tvia degli Orti, 12a – Bologna (BO)\t
+79064\tCaminia\tgelateria/caminia\t43.7606156\t11.2846354\t1\ttoscana\tfi\tfirenze\tv.le D. Giannotti, 29r – Firenze (FI)\t
+79065\tFiordipanna\tgelateria/fiordipanna\t45.501802\t9.025509\t2\tlombardia\tmi\tcornaredo\tp.zza della Libertà, 36 – Cornaredo (MI)\tPremio Miglior gelato al cioccolato 2022
+79066\tIl Gelataio Filippo\tgelateria/il-gelataio-filippo\t43.3128275\t10.5159903\t1\ttoscana\tli\tcecina\tvia L. Da Vinci, 4 – Cecina (LI)\t
+79068\tGelateria Gonetti\tgelateria/gelateria-gonetti\t45.0690922\t7.6369943\t2\tpiemonte\tto\ttorino\tvia C. Viberti, 1 – Torino (TO)\t
+79069\tSoncini - Gelato Per Passione dal 1977\tgelateria/soncini-gelato-per-passione-dal-1977\t39.2251583\t9.1254247\t2\tsardegna\tca\tcagliari\tvia D. Alighieri, 123 – Cagliari (CA)\t
+79070\tGelateria Artigianale Tondini\tgelateria/gelateria-artigianale-tondini\t40.7242864\t8.5601846\t2\tsardegna\tss\tsassari\tvia Brigata Sassari, 76 – Sassari (SS)\t
+79071\tRitrovo Orchidea\tgelateria/ritrovo-orchidea\t38.1236211\t15.0611812\t1\tsicilia\tme\toliveri\tvia G. Amodeo, 31 – Oliveri (ME)\t
+79072\tCremeria  Cecconi\tgelateria/cremeria-cecconi\t43.4624563\t11.8786352\t2\ttoscana\tar\tarezzo\tvia Madonna del Prato, 85 – Arezzo (AR)\t
+79073\tFruttuosa Gelateria Artigianale\tgelateria/fruttuosa-gelateria-artigianale\t40.4401247\t9.7659449\t2\tsardegna\tnu\torosei\tvia Tirreno Sos Alinos – Orosei (NU)\t
+79074\tLorenzo Pessina\tgelateria/lorenzo-pessina\t45.6092065\t8.896255199999999\t2\tlombardia\tva\tcastellanza\tvia Don Luigi Testori, 32a – Castellanza (VA)\t
+79075\tPasticceria Celestina\tpasticceria/pasticceria-celestina\t40.8557329\t14.380396\t2\tcampania\tna\tpollena-trocchia\tc.so Umberto I, 42 – Pollena Trocchia (NA)\tPremio La novità dell'anno 2022
+79076\tGelateria Bar Giorgio Lombardi\tcaffebar/gelateria-bar-giorgio-lombardi\t44.7618529\t8.784374999999999\t2\tpiemonte\tal\tnovi-ligure\tc.so R. Marenco, 133 – Novi Ligure (AL)\tPremio Miglior gelato gastronomico 2024
+79078\tL' Edicola\tgelateria/l-edicola\t42.7769795\t11.1202813\t2\ttoscana\tgr\tgrosseto\tvia Inghilterra, 30 – Grosseto (GR)\t
+79080\tGelateria  De Oro\tgelateria/gelateria-de-oro\t42.46571429999999\t14.2199605\t1\tabruzzo\tpe\tpescara\tvia R. Paolucci, 93 – Pescara (PE)\t
+79081\tLandolfo - Gelato Artigianale\tgelateria/landolfo-gelato-artigianale\t40.9379049\t14.2585752\t2\tcampania\tna\tgrumo-nevano\tp.zza D. Cirillo, 18 – Grumo Nevano (NA)\t
+79082\tLa Sorbettiera\tgelateria/la-sorbettiera-2\t43.7671865\t11.2416479\t2\ttoscana\tfi\tfirenze\tp.zza T. Tasso, 11r – Firenze (FI)\t
+79083\tSbrino - Gelatificio Contadino\tgelateria/sbrino-gelatificio-contadino\t43.7677141\t11.2456968\t2\ttoscana\tfi\tfirenze\tvia dei Serragli, 32r – Firenze (FI)\t
+79084\tAngelo Napoli - Artigiano del Gelato\tgelateria/angelo-napoli-artigiano-del-gelato\t40.7269376\t14.7603403\t2\tcampania\tsa\tbaronissi\tp.zza Municipio, 5/6 (ang. via N. Farina) – Baronissi (SA)\t
+79086\tLick\tgelateria/lick\t43.10825819999999\t12.3898333\t2\tumbria\tpg\tperugia\tc.so Cavour, 7 – Perugia (PG)\t
+79087\tRufus\tgelateria/rufus\t43.7198436\t10.4041482\t2\ttoscana\tpi\tpisa\tp.zza Martiri della Libertà, 25 – Pisa (PI)\tPremio Miglior gelato gastronomico 2024
+79088\tGelateria Fisotti\tgelateria/gelateria-fisotti\t40.1464599\t18.4911058\t2\tpuglia\tle\totranto\tl.go Cavour, 8 – Otranto (LE)\t
+79090\tGelateria KM Zero\tgelateria/gelateria-km-zero\t44.788793\t10.8779381\t2\temilia-romagna\tmo\tcarpi\tvia A. Manzoni, 35 – Carpi (MO)\t
+79091\tGelateria Dei Principi\tgelateria/gelateria-dei-principi\t44.7705247\t10.7796859\t2\temilia-romagna\tre\tcorreggio\tc.so Cavour, 10 – Correggio (RE)\t
+79092\tDolce Vita\tgelateria/dolce-vita\t42.10086889999999\t14.7193965\t2\tabruzzo\tch\tvasto\tv.le della Dalmazia, 61 – Vasto (CH)\t
+79093\tGiuseppe Arena\tgelateria/giuseppe-arena\t38.25936009999999\t15.6086514\t2\tsicilia\tme\tmessina\tvia Consolare Pompea, 1773 – Messina (ME)\t
+79094\tCaffè delle  Rose\tgelateria/caffe-delle-rose\t36.7830998\t14.5543979\t1\tsicilia\trg\tragusa\tp.zza Duca degli Abruzzi, 25 – Ragusa (RG)\t
+79095\tInSisto\tgelateria/insisto\t44.3079776\t8.481511600000001\t2\tliguria\tsv\tsavona\tvia A. Manzoni, 23 – Savona (SV)\t
+79096\tJetlag\tgelateria/jetlag\t45.6829414\t12.2534175\t1\tveneto\ttv\ttreviso\tv.le Brigata Treviso, 44 – Treviso (TV)\t
+79097\tL' Angolo del Gusto\tgelateria/l-angolo-del-gusto\t45.3256938\t8.423738499999999\t2\tpiemonte\tvc\tvercelli\tvia dei Mercati, 1 – Vercelli (VC)\t
+79098\tBuosi Gelato\tgelateria/buosi-gelato\t45.8195242\t8.8252484\t1\tlombardia\tva\tvarese\tvia Veratti, 12 – Varese (VA)\t
+79100\tMaterica\tgelateria/materica\t46.1706018\t9.8829827\t2\tlombardia\tso\tsondrio\tvia Stelvio, 76 – Sondrio (SO)\tPremio Valorizzazione delle produzione locali 2022
+79101\tI Gelati di Fé\tgelateria/i-gelati-di-fe\t43.8882622\t8.0441957\t1\tliguria\tim\timperia\tvia L. Maresca, 14 – Imperia (IM)\t
+79102\tGelato Pachamama\tgelateria/gelato-pachamama\t44.31934529999999\t9.3116939\t1\tliguria\tge\tchiavari\tvia Preli, 7d – Chiavari (GE)\t
+79104\tPingu\tgelateria/pingu\t46.035664\t11.1305421\t1\ttrentino-alto-adige\ttn\ttrento\tvia di Madonna Bianca, 124 – Trento (TN)\t
+79107\tCiò Gelato\tgelateria/cio-gelato\t43.9998411\t12.6633848\t2\temilia-romagna\trn\triccione\tv.le A. Gramsci, 66 – Riccione (RN)\t
+79108\tC'era una volta\tgelateria/cera-una-volta-2\t45.7995635\t9.432829199999999\t2\tlombardia\tlc\tcalolziocorte\tc.so Europa, 15 – Calolziocorte (LC)\t
+79109\tCapodilatte\tgelateria/capodilatte\t45.5485372\t11.5425943\t2\tveneto\tvi\tvicenza\tc.so Fogazzaro, 56 – Vicenza (VI)\tPremio Miglior gelato gastronomico 2027
+79110\tDolce\tgelateria/dolce\t41.5923642\t14.2289506\t2\tmolise\tis\tisernia\tp.zza G. Carducci, 22 – Isernia (IS)\t
+79111\tLaboratorio a vista\tgelateria/laboratorio-a-vista\t42.0022301\t14.9955345\t1\tmolise\tcb\ttermoli\tc.so Nazionale, 49 – Termoli (CB)\t
+79112\tdeCORE gelato creativo\tgelateria/decore-gelato-creativo\t41.73085700000001\t12.6568919\t2\tlazio\trm\talbano-laziale\tc.so G. Matteotti, 37 – Albano Laziale (RM)\t
+79114\tMario Magrini\tgelateria/mario-magrini\t42.6795594\t14.0144449\t2\tabruzzo\tte\troseto-degli-abruzzi\tv.le Roma, 22 – Roseto degli Abruzzi (TE)\t
+79115\tJuve Bar\tgelateria/juve-bar\t39.6183588\t15.8628517\t1\tcalabria\tcs\tbelvedere-marittimo\tp.zza Dante, 1 – Belvedere Marittimo (CS)\t
+79116\tGelida Voglia\tgelateria/gelida-voglia\t40.5373691\t17.4356089\t2\tpuglia\tta\tgrottaglie\tvia Parini, 2 – Grottaglie (TA)\t
+79117\tDon Prisco\tgelateria/don-prisco\t40.7411044\t14.6183062\t2\tcampania\tsa\tpagani\tc.so E. Padovano, 4 – Pagani (SA)\t
+79121\tVerney\tgelateria/verney\t45.76242\t6.99088\t1\tvalle-daosta\tao\tpre-saint-didier\troute Mont Blanc, 4 – Pré-Saint-Didier (AO)\t
+79122\tAgrigelateria Agri Berroni\tgelateria/agrigelateria-agri-berroni\t44.7911917\t7.6489552\t1\tpiemonte\tcn\tracconigi\tNucleo Berroni, 5 – Racconigi (CN)\t
+79123\tModo Gelato\tgelateria/modo-gelato\t45.0677463\t7.655364700000001\t2\tpiemonte\tto\ttorino\tc.so F. Ferrucci, 81c – Torino (TO)\t
+79124\tAria\tgelateria/aria\t45.0708342\t7.6966513\t3\tpiemonte\tto\ttorino\tvia Santa Giulia, 32f – Torino (TO)\t
+79126\tGelateria Cavour\tgelateria/gelateria-cavour\t45.9586978\t12.6587955\t2\tfriuli-venezia-giulia\tpn\tpordenone\tp.zza Cavour, 1 – Pordenone (PN)\t
+79127\tCremeria Veneta\tgelateria/cremeria-veneta\t45.9017309\t12.5263293\t2\tfriuli-venezia-giulia\tpn\tbrugnera\tvia Vittorio Veneto, 54 – Brugnera (PN)\t
+79128\tSiculo\tgelateria/siculo-2\t44.4013832\t8.952502299999999\t1\tliguria\tge\tgenova\tvia Trebisonda, 47r – Genova (GE)\t
+79129\tLa Cremeria delle Erbe\tgelateria/la-cremeria-delle-erbe\t44.4065146\t8.9323547\t1\tliguria\tge\tgenova\tvico delle Erbe, 17 – Genova (GE)\t
+79131\tGepi\tgelateria/gepi\t44.3036851\t9.2083059\t1\tliguria\tge\tportofino\tp.tta della Magnolia, 2 – Portofino (GE)\t
+79132\tAntica Gelateria Amedeo\tgelateria/antica-gelateria-amedeo\t44.3905895\t8.9746767\t1\tliguria\tge\tgenova\tvia Boccadasse, 7r – Genova (GE)\t
+79135\tGelato Contadino\tgelateria/gelato-contadino\t45.6941649\t9.647325\t3\tlombardia\tbg\tbergamo\tp.zza Risorgimento, 7 – Bergamo (BG)\t
+79136\tGhiso\tgelateria/ghiso\t45.4292278\t9.3089183\t2\tlombardia\tmi\tpeschiera-borromeo\tvia G. Matteotti, 16 – Peschiera Borromeo (MI)\t
+79137\tLeoni\tgelateria/leoni-2\t45.58402539999999\t9.2788147\t2\tlombardia\tmb\tmonza\tvia Vittorio Emanuele II, 36 – Monza (MB)\t
+79138\tLa Fonderia - Artigiani del Gelato\tgelateria/la-fonderia-artigiani-del-gelato\t45.7674505\t11.7288736\t1\tveneto\tvi\tbassano-del-grappa\tvia Angarano, 65 – Bassano del Grappa (VI)\t
+79139\tPikko - L?Atelier Del Gelato\tgelateria/pikko-l%c2%92atelier-del-gelato\t45.41334459999999\t10.99543\t2\tveneto\tvr\tverona\tvia Polveriera Vecchia, 39e – Verona (VR)\t
+79140\tNano Labo\tgelateria/nano-labo\t45.7567577\t12.1660763\t3\tveneto\ttv\tpovegliano\tvia Sant'Antonio, 43 – Povegliano (TV)\t
+79141\tRaro Cremeria Artigianale\tgelateria/raro-cremeria-artigianale\t45.3991064\t9.867116\t2\tlombardia\tcr\tsoncino\tvia Padre Mario Zanardi, 17 – Soncino (CR)\t
+79142\tPerlecò\tgelateria/perleco\t44.0055522\t8.172548299999999\t2\tliguria\tsv\talassio\tpasseggiata D. Grollero, 20 – Alassio (SV)\t
+79143\tRapaLisi Gelateria Argentina\tgelateria/rapalisi-gelateria-argentina\t41.1625532\t16.7513586\t1\tpuglia\tba\tbari\tc.so Umberto I, 19 – Bari (BA)\t
+79144\tGusto Antico\tgelateria/gusto-antico\t44.3991279\t11.5901049\t1\temilia-romagna\tbo\tcastel-san-pietro-terme\tvia L. Galvani, 9 – Castel San Pietro Terme (BO)\t
+79145\tCremeria La Vecchia Stalla\tgelateria/cremeria-la-vecchia-stalla\t44.4930181\t11.3474453\t1\temilia-romagna\tbo\tbologna\tvia Santo Stefano, 14a – Bologna (BO)\t
+79146\tSettimo Gelo\tgelateria/settimo-gelo\t44.7634589\t10.9237727\t2\temilia-romagna\tmo\tsoliera\tvia Carpi Ravarino, 508 – Soliera (MO)\t
+79148\tGelateria Naturale Demetra\tgelateria/gelateria-naturale-demetra\t43.0615509\t12.5695608\t3\tumbria\tpg\tassisi\tvia S. Pertini, 7 – Assisi (PG)\t
+79149\tIo e Gelato\tgelateria/io-e-gelato\t43.7223401\t10.4813944\t2\ttoscana\tpi\tsan-giuliano-terme\ts.da prov.le Calcesana, 499 – San Giuliano Terme (PI)\t
+79151\tCremeria Corradini\tgelateria/cremeria-corradini\t42.7624626\t10.8807296\t1\ttoscana\tgr\tcastiglione-della-pescaia\tc.so della Libertà, 45 – Castiglione della Pescaia (GR)\t
+79152\tGelateria di Castellina\tgelateria/gelateria-di-castellina\t43.4643021\t11.2898249\t1\ttoscana\tsi\tcastellina-in-chianti\tv.le IV Novembre, 47 – Castellina in Chianti (SI)\t
+79154\tIl Masgalano\tgelateria/il-masgalano\t43.3203986\t11.3274113\t1\ttoscana\tsi\tsiena\tvia della Sapienza, 47 – Siena (SI)\t
+79155\tLa Vecchia Latteria\tgelateria/la-vecchia-latteria\t43.3160933\t11.3299834\t1\ttoscana\tsi\tsiena\tvia San Pietro, 10 – Siena (SI)\t
+79156\tPozioni di Neve\tgelateria/pozioni-di-neve\t42.4389782\t11.1170771\t1\ttoscana\tgr\tporto-santo-stefano\tp.zza Vittorio Emanuele, 16 – Porto Santo Stefano (GR)\t
+79157\tZero Gradi\tgelateria/zero-gradi\t42.8140726\t10.3263602\t1\ttoscana\tli\telba\tvia Vittorio Emanuele II, 18 – Elba (LI)\t
+79158\tGelizioso\tgelateria/gelizioso\t40.8136587\t14.6181486\t3\tcampania\tsa\tsarno\tvia G. Matteotti, 47 – Sarno (SA)\tPremio Miglior gelato gastronomico 2025
+79161\tM'AMI Gelateria Contadina\tgelateria/mami-gelateria-contadina\t46.0355412\t10.8728666\t2\ttrentino-alto-adige\ttn\tcomano-terme\tvia C. Battisti, 65 – Comano Terme (TN)\t
+79162\tTerraricca\tgelateria/terraricca\t46.0565213\t11.128721\t2\ttrentino-alto-adige\ttn\ttrento\tv.le Verona, 67 – Trento (TN)\t
+79163\tZenzero - Gelateria + Bistrot\tgelateria/zenzero-gelateria-bistrot\t45.8851603\t11.0175534\t1\ttrentino-alto-adige\ttn\trovereto\tvia Libertà, 4 – Rovereto (TN)\t
+79164\tGnam Gnam\tgelateria/gnam-gnam\t45.4078581\t11.8741501\t2\tveneto\tpd\tpadova\tvia San Clemente, 18 – Padova (PD)\t
+79166\tIl Massimo del Gelato\tgelateria/il-massimo-del-gelato-2\t38.8468144\t16.381035\t1\tcalabria\tcz\tjacurso\tvia Nazionale, 24 – Jacurso (CZ)\t
+79167\tPeace & Cream\tgelateria/peace-cream\t44.2849432\t11.8832343\t2\temilia-romagna\tra\tfaenza\tp.zza Martiri della Libertà, 43 – Faenza (RA)\t
+79168\tFreddino Gelateria\tgelateria/freddino-gelateria\t44.2090873\t12.031506\t1\temilia-romagna\tfc\tforli\tv.le dell'Appennino, 120 – Forlì (FC)\t
+79169\tCremeria Pincini\tgelateria/cremeria-pincini\t43.5916769\t13.5168065\t1\tmarche\tan\tancona\tvia delle Tavernelle, 124 – Ancona (AN)\t
+79170\tFortini La Gelateria\tgelateria/fortini-la-gelateria\t41.7309636\t12.6586045\t2\tlazio\trm\talbano-laziale\tp.zza Pia, 19 – Albano Laziale (RM)\t
+79172\tLe Souvenir d'un Bon Cafe\tgelateria/le-souvenir-dun-bon-cafe\t40.64274\t15.77347\t2\tbasilicata\tpz\tpotenza\tvia del Seminario Maggiore, 456 – Potenza (PZ)\t
+79173\tDuci\tgelateria/duci\t37.5210805\t15.0877609\t1\tsicilia\tct\tcatania\tvia Vittorio Veneto, 8 – Catania (CT)\t
+79174\tGrangel Granite & Gelati\tgelateria/grangel-granite-gelati\t41.8961788\t12.5132225\t2\tlazio\trm\troma\tvia degli Equi, 42 – Roma (RM)\t
+79175\tBar Jolli\tgelateria/bar-jolli\t38.7656285\t16.540888\t1\tcalabria\tcz\tstaletti\tp.zza Roma, 9 – Stalettì (CZ)\t
+79176\tKremet Gelateria\tgelateria/kremet-gelateria\t39.240791\t9.1777412\t1\tsardegna\tca\tquartu-santelena\tv.le C. Colombo, 50 – Quartu Sant'Elena (CA)\t
+79178\tCenzino\tgelateria/cenzino\t40.8238236\t16.557389\t2\tpuglia\tba\taltamura\tv.le Martiri del 1799, 79 – Altamura (BA)\t
+79179\tTrebottoni\tgelateria/trebottoni\t38.1197751\t15.6531893\t2\tcalabria\trc\treggio-calabria\tvia G. de Nava, 40/I – Reggio Calabria (RC)\t
+79180\tIl Gelato di Pasqualetti\tgelateria/il-gelato-di-pasqualetti\t42.7182934\t12.1108654\t2\tumbria\ttr\torvieto\tp.zza del Duomo, 10 – Orvieto (TR)\t
+79183\tSablé Gelato\tgelateria/sable-gelato\t44.5014161\t11.3441037\t2\temilia-romagna\tbo\tbologna\tvia dei Mille, 3a – Bologna (BO)\tPremio Gelatiere emergente 2023
+79184\tL' Ancora\tgelateria/l-ancora\t40.2853571\t14.9471549\t1\tcampania\tsa\tcastellabate\tp.zza Luigi Guercio, 5 – Castellabate (SA)\t
+79185\tLa Cremeria Gelati & C.\tgelateria/la-cremeria-gelati-c\t40.63444\t17.030936\t1\tpuglia\tta\tmottola\tvia Palagianello, 128/A – Mottola (TA)\t
+79186\tPace\tpasticceria/pace\t41.1144747\t9.5403821\t2\tsardegna\tss\tarzachena\tp.tta Alto Pevero – Arzachena (SS)\t
+79187\tMafrica\tgelateria/mafrica\t45.7364675\t7.317785199999999\t1\tvalle-daosta\tao\taosta\tvia J. B. de Tillier, 31 – Aosta (AO)\t
+79188\tAdua\tpasticceria/adua\t40.7027313\t17.339336\t2\tpuglia\tta\tmartina-franca\tvia Paisiello, 62 – Martina Franca (TA)\t
+79189\tBiondi gelato naturale\tgelateria/biondi-gelato-naturale\t45.5669137\t8.049931899999999\t2\tpiemonte\tbi\tbiella\tp.zza E. Curiel, 1/G – Biella (BI)\t
+79190\tPama\tgelateria/pama\t45.4467583\t8.6205939\t2\tpiemonte\tno\tnovara\tc.so Italia, 13/E – Novara (NO)\t
+79191\tPradetto - Artigiani del gelato\tgelateria/pradetto-artigiani-del-gelato\t46.7167009\t11.6572416\t2\ttrentino-alto-adige\tbz\tbressanone-brixen\tvia Portici Maggiori, 1 – Bressanone/Brixen (BZ)\t
+79192\tEisdiele Anny\tgelateria/eisdiele-anny\t46.6869305\t11.1888008\t1\ttrentino-alto-adige\tbz\tscena-schenna\tv.lo Kupferloch, 3 – Scena/Schenna (BZ)\t
+79193\tLa Gelateria Bacilieri\tgelateria/la-gelateria-bacilieri\t45.9455562\t8.835332\t1\tlombardia\tva\tmarchirolo\tvia Statale, 27 – Marchirolo (VA)\t
+79194\tMille Voglie\tgelateria/mille-voglie\t40.7860291\t17.2359878\t2\tpuglia\tba\talberobello\tp.zza A. Curri, 31 – Alberobello (BA)\t
+79196\tDolci Distrazioni\tgelateria/dolci-distrazioni\t41.2130239\t9.4059218\t1\tsardegna\tss\tla-maddalena\tl.go G. Matteotti, 8 – La Maddalena (SS)\t
+79197\tVelluto\tgelateria/velluto\t42.6092758\t14.0662097\t1\tabruzzo\tte\tpineto\tvia G. D'Annunzio, 56 – Pineto (TE)\t
+79198\tNevedarance Gelato Naturale\tgelateria/nevedarance-gelato-naturale\t45.3078955\t7.890352099999999\t2\tpiemonte\tto\tcaluso\tp.zza Ubertini, 23 A – Caluso (TO)\t
+79199\tFederico Prodon Pâtisserie e Crémerie\tgelateria/federico-prodon-patisserie-e-cremerie\t41.9221551\t12.4813762\t2\tlazio\trm\troma\tvia G. Schiaparelli, 21 – Roma (RM)\t
+79200\tBig Ben Bar\tgelateria/big-ben-bar\t44.815998\t8.239172\t2\tpiemonte\tat\tmontegrosso-dasti\tvia Asti Mare, 55 – Montegrosso d'Asti (AT)\t
+79201\tGolosone\tgelateria/golosone\t44.147561\t9.654812\t1\tliguria\tsp\tmonterosso-al-mare\tvia Roma, 17 – Monterosso al Mare (SP)\t
+79202\tMister Ice Cream\tgelateria/mister-ice-cream\t45.5406222\t8.8477777\t1\tlombardia\tmi\tarconate\tp.zza Libertà, 26 – Arconate (MI)\t
+79203\tGelato Elementare\tgelateria/gelato-elementare\t45.42834\t10.18597\t2\tlombardia\tbs\tbagnolo-mella\tvia Antonio Gramsci, 125 – Bagnolo Mella (BS)\t
+79205\tGelateria Toldo\tgelateria/gelateria-toldo\t45.8544383\t9.3911725\t1\tlombardia\tlc\tlecco\tvia Camillo Benso Conte di Cavour, 41 – Lecco (LC)\t
+79206\tMandorlacchio\tgelateria/mandorlacchio\t45.7076253\t9.680266999999999\t2\tlombardia\tbg\tbergamo\tv.le Giulio Cesare, 14G – Bergamo (BG)\t
+79207\tVerderosa\tgelateria/verderosa\t45.7035256\t9.677385899999999\t2\tlombardia\tbg\tbergamo\tvia Cesare Battisti, 1 – Bergamo (BG)\t
+79208\tGelateria Pistacchiodo\tgelateria/gelateria-pistacchiodo\t45.61357\t9.37185\t1\tlombardia\tmb\tvimercate\tvia Cavour, 18/A – Vimercate (MB)\t
+79210\tGelateria Sioli e Bissoli\tgelateria/gelateria-sioli-e-bissoli\t45.4515272\t9.208639999999999\t1\tlombardia\tmi\tmilano\tvia Lodovico Muratori, 26 – Milano (MI)\t
+79212\tGelab Gelateria\tgelateria/gelab-gelateria\t45.81066\t9.0815\t2\tlombardia\tco\tcomo\tvia Cinque Giornate, 40 – Como (CO)\t
+79213\tLe Giuggiole\tgelateria/le-giuggiole\t45.86224869999999\t9.0989512\t2\tlombardia\tco\tmoltrasio\tp.zza San Martino, 3 – Moltrasio (CO)\t
+79214\tGelato Romano - Tentazione Divina\tgelateria/gelato-romano-tentazione-divina\t41.9150989\t12.5222429\t2\tlazio\trm\troma\tvia G. Boni, 33 – Roma (RM)\t
+79215\tBaiocc Gelateria e Pasticceria\tgelateria/baiocc-gelateria-e-pasticceria\t44.8518862\t9.8671398\t2\temilia-romagna\tpc\tfiorenzuola-darda\tvia San Fiorenzo, 39 – Fiorenzuola d'Arda (PC)\t
+79216\tL' Artigiano dei Sapori\tgelateria/l-artigiano-dei-sapori\t45.76577\t10.80954\t2\tveneto\tvr\tmalcesine\tvia Porta Orientale, 15 – Malcesine (VR)\t
+79217\tDolci Sinfonie\tgelateria/dolci-sinfonie\t45.89947\t12.17355\t1\tveneto\ttv\tpieve-di-soligo\tp.zza Vittorio Emanuele II, 34 – Pieve di Soligo (TV)\t
+79218\tPrana\tgelateria/prana\t45.66677199999999\t12.2435195\t2\tveneto\ttv\ttreviso\tvia Calmaggiore, 60 – Treviso (TV)\t
+79221\tLa Mela Verde\tgelateria/la-mela-verde\t45.4354952\t12.344115\t2\tveneto\tve\tvenezia\tfondamenta de l'Osmarin, 4977/A – Venezia (VE)\t
+79222\tCiokkolatte\tgelateria/ciokkolatte\t45.4079737\t11.873165\t2\tveneto\tpd\tpadova\tp.zza dei Signori, 27 – Padova (PD)\t
+79223\tDolom'ice\tgelateria/dolomice\t46.1581269\t10.7650452\t2\ttrentino-alto-adige\ttn\tpinzolo\tp.zza Pernici, 7 – Pinzolo (TN)\t
+79224\tAiJOO\tgelateria/aijoo\t46.6414166\t11.0058623\t2\ttrentino-alto-adige\tbz\tnaturno-naturns\tvia Stazione, 47 – Naturno/Naturns (BZ)\t
+79225\tCioccolateria Gelateria Banchini\tgelateria/cioccolateria-gelateria-banchini\t44.7881796\t10.3006095\t2\temilia-romagna\tpr\tparma\tvia La Spezia, 121 – Parma (PR)\t
+79226\tGelato, Gabriele Vannucci\tgelateria/gelato-gabriele-vannucci\t43.7726646\t11.2729748\t2\ttoscana\tfi\tfirenze\tvia  A. Scialoja, 27r – Firenze (FI)\t
+79228\tEdoardo il gelato biologico\tgelateria/edoardo-il-gelato-biologico\t43.7725507\t11.2576989\t2\ttoscana\tfi\tfirenze\tp.zza del Duomo, 45/R – Firenze (FI)\t
+79229\tSbrino\tgelateria/sbrino\t44.41674380000001\t12.1998486\t2\temilia-romagna\tra\travenna\tvia M. Gordini, 3 – Ravenna (RA)\t
+79230\tLa Cremosa Cremeria Artigianale\tgelateria/la-cremosa-cremeria-artigianale\t43.2737072\t13.5885182\t2\tmarche\tmc\tmorrovalle\tvia XXV Aprile, 47 – Morrovalle (MC)\t
+79232\tGelateria Fiore Di Latte\tgelateria/gelateria-fiore-di-latte\t45.88927899999999\t13.4977341\t2\tfriuli-venezia-giulia\tgo\tgradisca-disonzo\tvia G. Garibaldi, 21 – Gradisca d'Isonzo (GO)\t
+79233\tGelateria Dolci Emozioni\tgelateria/gelateria-dolci-emozioni\t46.2891468\t13.1457376\t2\tfriuli-venezia-giulia\tpn\tcordovado\tvia B. Gemona, 5 – Cordovado (PN)\t
+79234\tLa Bottega Artigiana\tgelateria/la-bottega-artigiana\t43.6258218\t13.3925384\t2\tmarche\tan\tfalconara-marittima\tvia Piero Pergoli, 7 – Falconara Marittima (AN)\t
+79235\tGelateria Gallonetto\tgelateria/gelateria-gallonetto\t45.4372585\t12.3393372\t2\tveneto\tve\tvenezia\tSalizada S. Lio, 5727 – Venezia (VE)\t
+79237\tCostantino - Pasticceria & Gelateria\tgelateria/costantino-pasticceria-gelateria\t38.3563078\t15.8463421\t1\tcalabria\trc\tpalmi\tc.so Garibaldi, 143 – Palmi (RC)\t
+79238\tGelateria Enrico\tgelateria/gelateria-enrico\t38.75432\t16.18946\t2\tcalabria\tvv\tpizzo\tvia Prangi – Pizzo (VV)\t
+79239\tGlam\tgelateria/glam\t41.96086\t12.79683\t1\tlazio\trm\ttivoli\tp.zza Giuseppe Garibaldi, 12 – Tivoli (RM)\t
+79240\tBar Ettore\tgelateria/bar-ettore\t38.2365176\t16.2654256\t2\tcalabria\trc\tlocri\tp.zza Re Umberto, 12 – Locri (RC)\tPremio Gelato e Territorio 2027
+79241\tLa Fenice Gelateria\tgelateria/la-fenice-gelateria\t41.07207140000001\t14.3351437\t1\tcampania\tce\tcaserta\tc.so Trieste, 147 – Caserta (CE)\t
+79242\tTutto Gelato\tgelateria/tutto-gelato\t40.8351584\t14.3468082\t2\tcampania\tna\tsan-giorgio-a-cremano\tvia  Pittore, 188 – San Giorgio a Cremano (NA)\t
+79243\tGiallo Limone\tgelateria/giallo-limone\t40.6769805\t14.7666746\t2\tcampania\tsa\tsalerno\tvia Giovan Angelo Papio, 6 – Salerno (SA)\t
+79244\tLatteria Del Ringo\tgelateria/latteria-del-ringo\t40.705305\t17.3377945\t1\tpuglia\tta\tmartina-franca\tvia Vittorio Emanuele, 65-68 – Martina Franca (TA)\t
+79245\tRocco Naviglio #educazionegelatoartigianale\tgelateria/rocco-naviglio-educazionegelatoartigianale\t41.45539\t15.55378\t2\tpuglia\tfg\tfoggia\tv.le Cristoforo Colombo, 54 – Foggia (FG)\tPremio Premio sostenibilità 2024
+79246\tC'era una volta\tgelateria/cera-una-volta-3\t41.076926\t9.391779999999999\t2\tsardegna\tss\tarzachena\tv.le Costa Smeralda, 64 – Arzachena (SS)\t
+79248\tFicus Gelato\tgelateria/ficus-gelato\t38.1217011\t13.3425525\t1\tsicilia\tpa\tpalermo\tvia Dante, 332 – Palermo (PA)\t
+79249\tLa Delizia\tgelateria/la-delizia\t38.1995703\t13.2780039\t2\tsicilia\tpa\tpalermo\tvia  Dammuso, 57 – Palermo (PA)\t
+79251\tChoco Gioia\tgelateria/choco-gioia\t39.3600031\t9.0078616\t2\tsardegna\tca\tsan-sperate\tvia  Bau Ninni Cannas, 14 – San Sperate (CA)\t
+79252\tGelatificio di Federico\tgelateria/gelatificio-di-federico\t39.2189598\t9.1099243\t1\tsardegna\tca\tcagliari\tc.so  Vittorio Emanuele II, 185 – Cagliari (CA)\t
+79255\tTennis Bar Gelateria\tgelateria/tennis-bar-gelateria\t42.4205485\t14.2920382\t1\tabruzzo\tch\tfrancavilla-al-mare\tp.zza Sirena, 9/A – Francavilla al Mare (CH)\t
+79256\tTichetta - gelato label\tgelateria/tichetta-gelato-label\t41.9138905\t12.4385507\t2\tlazio\trm\troma\tvia Appiano, 4 – Roma (RM)\t
+80385\tCaffè Sicilia\tpasticceria/caffe-sicilia\t36.8911814\t15.069682599999965\t0\tsicilia\tsr\tnoto\tc.so Vittorio Emanuele, 125 – Noto (SR)\tPremio Premio sostenibilità 2025
+80556\tCiarapica\tcaffebar/ciarapica\t44.3942753\t8.9676339\t2\tliguria\tge\tgenova\tvia F. D. Guerrazzi, 8r – Genova (GE)\t
+80678\tCaffetteria Romeo Viganotti\tcaffebar/caffetteria-romeo-viganotti\t44.3940657\t9.0026173\t2\tliguria\tge\tgenova\tsalita del Prione, 12r – Genova (GE)\t
+81294\tOtaleg!\tgelateria/otaleg-2\t41.8830237\t12.4585138\t3\tlazio\trm\troma\tv.le dei Quattro Venti, 70 – Roma (RM)\t
+123657\tWally Gelateria Creativa\tgelateria/wally-gelateria-creativa\t45.4765528\t9.2106101\t1\tlombardia\tmi\tmilano\tp.le Lavater – Milano (MI)\t
+123660\tLuca - Il gelato di compagnia\tgelateria/luca-il-gelato-di-compagnia\t45.4636187\t9.211179699999999\t1\tlombardia\tmi\tmilano\tvia G. Fiamma, 11 – Milano (MI)\t
+123662\tGelatteria - il gelato della fattoria\tgelateria/gelatteria-il-gelato-della-fattoria\t45.2281702\t9.1929466\t2\tlombardia\tpv\tsan-genesio-ed-uniti\tvia per Due Porte – San Genesio ed Uniti (PV)\t
+124133\tRosamundi\tgelateria/rosamundi\t41.87722\t12.43036\t2\tlazio\trm\troma\tvia Silvestri, 224 – Roma (RM)\t
+124137\tStefano Ferrara Formaessenza\tgelateria/stefano-ferrara-%c2%96-formaessenza\t41.86451\t12.47252\t3\tlazio\trm\troma\tvia E. Fermi, 102 – Roma (RM)\t
+150852\tGelateria Umberto\tgelateria/gelateria-umberto\t45.4619209\t9.2066128\t2\tlombardia\tmi\tmilano\tp.zza Cinque Giornate, 4 – Milano (MI)\t
+150853\tGelateria Savoia\tgelateria/gelateria-savoia\t45.4385439\t10.9909897\t2\tveneto\tvr\tverona\tvia Roma, 1/B – Verona (VR)\t
+150854\tAgrigelateria Tenuta Chirico\tformaggi/agrigelateria-tenuta-chirico\t40.1793402\t15.157149\t2\tcampania\tsa\tascea\tvia Isacia, 29 – Ascea (SA)\t
+150856\tViola Gelati & caffè dal 1936\tgelateria/viola-gelati-caffe-dal-1936\t37.0628976\t15.2926651\t1\tsicilia\tsr\tsiracusa\tc.so G. Matteotti, 51 – Siracusa (SR)\t
+150857\tMivà\tgelateria/miva\t40.407507\t16.68714399999999\t2\tbasilicata\tmt\tbernalda\tc.so Umberto I, 68 – Bernalda (MT)\t
+150858\tIl Cannolo Siciliano\tgelateria/il-cannolo-siciliano\t41.8868944\t12.540733000000046\t3\tlazio\trm\troma\tp.zza R. Malatesta, 16b – Roma (RM)\t
+150860\tScrivano -Terre d'Altopiano\tazienda-agricola/scrivano-terre-daltopiano\t39.3703401\t16.5099285\t2\tcalabria\tcs\tspezzano-della-sila\tc.da Vaccarizzo – Spezzano della Sila (CS)\t
+150861\tGelati Radicali\tgelateria/gelati-radicali\t43.61744239999999\t13.5203597\t2\tmarche\tan\tancona\tc.so G. Amendola, 5/A – Ancona (AN)\tPremio Gelatiere emergente 2025
+150864\tGelateria MareMoro\tgelateria/gelateria-maremoro\t45.4972718\t12.6208717\t2\tveneto\tve\tjesolo\tvia A. Bafile, 407 – Jesolo (VE)\t
+150865\tGelateria Emé\tgelateria/gelateria-eme\t45.70145\t11.53243\t2\tveneto\tvi\tsarcedo\tvia Ca' Ronzani, 34 – Sarcedo (VI)\t
+150866\tPausa Gelato\tgelateria/pausa-gelato\t45.78478\t12.21917\t2\tveneto\ttv\tarcade\tp.zza Vittorio Emanuele III, 9 – Arcade (TV)\t
+150867\tGelateria Panna&Storti\tgelateria/gelateria-pannastorti\t45.79606589999999\t11.7580212\t2\tveneto\tvi\tromano-dezzelino\tvia Roma, 8 – Romano d'Ezzelino (VI)\tPremio Miglior gelato gastronomico 2025
+150868\tMadreterra Il Gelato Naturale\tgelateria/madreterra-il-gelato-naturale\t45.4733458\t7.8810106\t2\tpiemonte\tto\tivrea\tvia Lago Sirio, 12 – Ivrea (TO)\t
+150869\tPapalele\tgelateria/papalele\t45.0576139\t7.681092100000001\t3\tpiemonte\tto\ttorino\tc.so G. Marconi, 23/A – Torino (TO)\t
+150870\tMologni Gelato\tgelateria/mologni-gelato\t45.6616371\t9.9740672\t2\tlombardia\tbs\tparatico\tvia Via Mazzini, 7 – Paratico (BS)\t
+150871\tRock\tgelateria/rock\t45.655868\t10.3944801\t2\tlombardia\tbs\tpreseglie\tvia strada provinciale, 79 – Preseglie (BS)\t
+150872\tIl Giubileo\tgelateria/il-giubileo\t41.4863375\t14.8297169\t3\tmolise\tcb\triccia\tvia Carmine, 48 – Riccia (CB)\t
+150873\tGelalto\tgelateria/gelalto\t42.00170050000001\t14.9957226\t1\tmolise\tcb\ttermoli\tc.so Nazionale, 76 – Termoli (CB)\t
+150874\tScilò Gelateria Contemporanea\tgelateria/scilo-gelateria-contemporanea\t42.3664817\t14.1415664\t2\tabruzzo\tch\tchieti\tv.le B. Croce, 389 – Chieti (CH)\tPremio Miglior gelato gastronomico 2027
+150875\tSensolato\tgelateria/sensolato\t46.1162481\t8.2913071\t2\tpiemonte\tvb\tdomodossola\tp.zza del Mercato, 29 – Domodossola (VB)\t
+150876\tLatteria di Aviano\tgelateria/latteria-di-aviano\t46.0726067\t12.5884683\t1\tfriuli-venezia-giulia\tpn\taviano\tvia Vittorio Veneto, 45 – Aviano (PN)\t
+150877\tGelaGrado\tgelateria/gelagrado\t45.6758\t13.38827\t2\tfriuli-venezia-giulia\tgo\tgrado\tl.go S. Grisogono, 17 – Grado (GO)\t
+150878\tGelateria Alfieri\tgelateria/gelateria-alfieri\t44.73315239999999\t10.7857343\t1\temilia-romagna\tre\tsan-martino-in-rio\tc.so Umberto I, 9 – San Martino in Rio (RE)\t
+150879\tGelateria San Gottardo\tgelateria/gelateria-san-gottardo\t45.6965588\t8.4639411\t2\tpiemonte\tno\tborgomanero\tc.so Roma, 116 – Borgomanero (NO)\tPremio Miglior gelato al cioccolato 2025
+150880\tGelateria del Sole\tgelateria/gelateria-del-sole\t45.6001298\t9.173385\t1\tlombardia\tmb\tvaredo\tv.le Brianza, 72 – Varedo (MB)\t
+150882\tIl Mustacchio\tgelateria/il-mustacchio\t45.4460498\t10.9675134\t1\tveneto\tvr\tverona\tvia L. Galvani, 31 – Verona (VR)\t
+150883\tGelati Cortese\tgelateria/gelati-cortese\t44.0122959\t12.6446166\t1\temilia-romagna\trn\triccione\tv.le Tasso, 82/B – Riccione (RN)\t
+150884\tDelizie Bolognesi\tgelateria/delizie-bolognesi\t44.4991812\t11.3377654\t2\temilia-romagna\tbo\tbologna\tvia Riva di Reno, 76/f – Bologna (BO)\t
+150885\tMundos\tgelateria/mundos\t44.6138\t11.83803\t2\temilia-romagna\tfe\targenta\tP. P. Travasoni, 9/B – Argenta (FE)\t
+150886\tGelati Allegri\tgelateria/gelati-allegri\t44.2623702\t12.3487006\t1\temilia-romagna\tra\tcervia\tvia Cavour, 10 – Cervia (RA)\t
+150887\tBuongusto\tgelateria/buongusto\t43.0769379\t11.6806667\t2\ttoscana\tsi\tpienza\tvia Case Nuove, 26 – Pienza (SI)\t
+150889\tI Giardini di Cataldo\tgelateria/i-giardini-di-cataldo\t40.6276568\t14.3776939\t2\tcampania\tna\tsorrento\tvia Correale, 27 – Sorrento (NA)\t
+150892\tIkigai\tgelateria/ikigai\t40.60117\t14.35702\t2\tcampania\tna\tmassa-lubrense\tp.zza San Pietro in Monticchio – Massa Lubrense (NA)\t
+150894\tCremeria d' Elia\tgelateria/cremeria-d-elia\t41.6895468\t15.3809215\t2\tpuglia\tfg\tsan-severo\tc.so G. Garibaldi, 100 – San Severo (FG)\t
+150895\tGelateria Marea\tgelateria/gelateria-marea\t41.632695\t15.9253052\t1\tpuglia\tfg\tmanfredonia\tv.le Miramare, 7/A – Manfredonia (FG)\t
+150896\tSàben\tgelateria/saben\t41.2771797\t16.4197055\t2\tpuglia\tbt\ttrani\tvia Zanardelli, 44/46 – Trani (BT)\t
+150898\tFiocco di Neve\tgelateria/fiocco-di-neve\t45.117041\t7.395180000000001\t1\tpiemonte\tto\talmese\tp.zza Martiri della Libertà, 6 – Almese (TO)\t
+150899\tGelateria La  Foce\tgelateria/gelateria-la-foce\t43.8721338\t8.0116002\t1\tliguria\tim\timperia\tSpianata Luigi Varese, 4 – Imperia (IM)\t
+150900\tGelateria Alaska\tgelateria/gelateria-alaska\t45.4406171\t12.3250056\t1\tveneto\tve\tvenezia\tCalle Larga dei Bari, 1159 – Venezia (VE)\t
+150901\tBacaro del Gelato\tgelateria/bacaro-del-gelato\t45.4440787\t12.3330303\t1\tveneto\tve\tvenezia\tfondamenta de la Misericordia, 2499 – Venezia (VE)\t
+150902\tSavà - Dolceria\tgelateria/sava-dolceria\t40.79389949999999\t16.7516235\t2\tpuglia\tba\tsanteramo-in-colle\tc.so Italia, 222 – Santeramo in Colle (BA)\t
+150903\tIl Gelato di Giada\tgelateria/il-gelato-di-giada\t43.7213726\t10.4124848\t1\ttoscana\tpi\tpisa\tvia A. Battelli, 27 – Pisa (PI)\t
+150904\tOpéra\tgelateria/opera-3\t43.3077551\t13.7294762\t1\tmarche\tmc\tcivitanova-marche\tc.so Dalmazia, 11 – Civitanova Marche (MC)\t
+150905\tGelateria Minù\tgelateria/gelateria-minu\t45.62007\t9.58993\t2\tlombardia\tbg\tosio-sotto\tvia delle Ubiere, 13 – Osio Sotto (BG)\t
+150907\tBar Libertà\tgelateria/bar-liberta\t38.2070257\t15.5609472\t1\tsicilia\tme\tmessina\tv.le della Libertà, 113 – Messina (ME)\t
+150910\tLa Cremeria Vitaro\tgelateria/la-cremeria-vitaro-2\t39.3018361\t16.2519314\t3\tcalabria\tcs\trende\tvia F. Cilea, 325 – Rende (CS)\t
+150911\tSpatolata Gelato\tgelateria/spatolata-gelato\t44.69584\t10.62728\t2\temilia-romagna\tre\treggio-emilia\tvia G. Panciroli, 9 – Reggio Emilia (RE)\t
+150912\tAccademia del Gelato\tgelateria/accademia-del-gelato\t46.0613544\t13.2368544\t2\tfriuli-venezia-giulia\tud\tudine\tvia Savorgnana, 16 – Udine (UD)\t
+150913\tAgricola\tgelateria/agricola\t40.4275471\t18.1902746\t2\tpuglia\tle\tlecce\tp.zza d?Italia, 28 – Lecce (LE)\t
+150914\tJacopo Falli Dolci&Gelato\tgelateria/jacopo-falli-dolcigelato\t40.25837\t17.89325\t2\tpuglia\tle\tporto-cesareo\tvia S. Pellico, 45 – Porto Cesareo (LE)\t
+150915\tManzi Gelateria\tgelateria/manzi-gelateria\t43.6757735\t10.2736938\t2\ttoscana\tpi\tpisa\tvia Maiorca, 47,  PI – Pisa (PI)\t
+150916\tGelateria Belsito\tgelateria/gelateria-belsito\t41.91540579999999\t12.5233853\t1\tlazio\trm\troma\tvia Livorno, 39 – Roma (RM)\t
+150917\tMavè gelateria\tgelateria/mave-gelateria\t41.8812916\t12.5020944\t2\tlazio\trm\troma\tvia Gallia, 56 – Roma (RM)\t
+150918\tLa Gelateria di Chiara Spalluto\tgelateria/la-gelateria-di-chiara-spalluto\t40.5008532\t18.1177836\t2\tpuglia\tle\tsquinzano\tvia del Capodoglio, 2 – Squinzano (LE)\t
+150919\tTerranova\tgelateria/terranova\t37.0891136\t14.7623112\t1\tsicilia\trg\tmonterosso-almo\tp.zza San Giovanni, 361 – Monterosso Almo (RG)\t
+150920\tLevante Gelato Artigianale\tgelateria/levante-gelato-artigianale\t37.0649558\t15.2932163\t1\tsicilia\tsr\tsiracusa\tvia Trento, 8 – Siracusa (SR)\t
+150922\tBiancamenta\tgelateria/biancamenta\t43.4288203\t13.6655482\t3\tmarche\tmc\tporto-recanati\tc.so G. Matteotti, 256 – Porto Recanati (MC)\t
+150923\tBuono Così\tgelateria/buono-cosi\t41.8854116\t12.5675886\t1\tlazio\trm\troma\tp.zza dei Gerani, 30 – Roma (RM)\t
+150927\tGelato\tgelateria/gelato\t44.533288\t11.024253\t1\temilia-romagna\tmo\tspilamberto\tvia Umberto I, 4 – Spilamberto (MO)\t
+150928\tGelateria di quartiere\tgelateria/gelateria-di-quartiere\t41.76220259999999\t12.2349798\t2\tlazio\trm\tfiumicino\tvia del Faro, 150 – Fiumicino (RM)\t
+150929\tZelato\tgelateria/zelato\t41.8963316\t12.5149942\t2\tlazio\trm\troma\tvia degli Aurunci, 40 – Roma (RM)\t
+150930\tLa Corona Gelateria Naturale\tgelateria/la-corona-gelateria-naturale\t41.9496425\t12.3777408\t2\tlazio\trm\troma\tvia Santi Martiri di Selva Candida, 18 – Roma (RM)\t
+150931\tGelasio - Oltre il gelato\tgelateria/gelasio-oltre-il-gelato\t41.8513794\t12.432228\t2\tlazio\trm\troma\tvia Portuense, 727 F/G – Roma (RM)\t
+150932\tIl Fenicottero\tgelateria/il-fenicottero\t42.09219\t12.26941\t2\tlazio\trm\tanguillara-sabazia\tvia M. Moris, 2 – Anguillara Sabazia (RM)\t
+150933\tLa Cremeria\tgelateria/la-cremeria\t43.1804946\t13.7962868\t1\tmarche\tfm\tporto-san-giorgio\tvia F. Gentili, 50 – Porto San Giorgio (FM)\t
+304107\tDa  Teo\tpasticceria/da-teo-2\t\t\t2\temilia-romagna\tpr\tsorbolo\tvia XXV Aprile, 25 – Sorbolo (PR)\t
+327387\tMoer - Alta pasticceria e gelato\tpasticceria/moer-alta-pasticceria-e-gelato\t42.22889110000001\t14.3926768\t2\tabruzzo\tch\tlanciano\tc.so Trento e Trieste, 75 – Lanciano (CH)\t
+332936\tSanpe\tgelateria/sanpe\t45.3001806\t9.4945361\t2\tlombardia\tlo\tlodi\tvia Maestri del Lavoro, 31 – Lodi (LO)\t
+379796\tAntica Gelateria  Belvedere\tcaffebar/antica-gelateria-belvedere\t38.6952725\t16.1437995\t0\tcalabria\tvv\tpizzo\tp.zza della Repubblica, 43 – Pizzo (VV)\t
+379797\tVannulo\tformaggi/vannulo\t40.4461194\t15.02214349999997\t0\tcampania\tsa\tcapaccio-paestum\tc.da Vannulo via G. Galilei, 101 – Capaccio Paestum (SA)\t
+379798\tGelateria del  Biondo\tgelateria/gelateria-del-biondo\t45.5335465\t10.2221634\t2\tlombardia\tbs\tbrescia\tvia Vittorio Emanuele II, 115 – Brescia (BS)\t
+379800\tDi Matteo\tgelateria/di-matteo-2\t40.3235079\t15.05183999999997\t3\tcampania\tsa\ttorchiara\tp.zza A. Torre, 13 – Torchiara (SA)\t
+379804\tEsquimau\tgelateria/esquimau\t45.9640625\t12.654813500000046\t2\tfriuli-venezia-giulia\tpn\tpordenone\tvia Montereale, 6b – Pordenone (PN)\t
+379805\tAndrea Pansa\tgelateria/andrea-pansa\t40.634426\t14.6023791\t2\tcampania\tsa\tamalfi\tvia Lorenzo d'Amalfi, 1 – Amalfi (SA)\t
+379814\tBun da Mat\tgelateria/bun-da-mat\t44.7084728\t8.2301471\t2\tpiemonte\tcn\tsanto-stefano-belbo\tp.zza Umberto I, 36 – Santo Stefano Belbo (CN)\t
+379815\tGasparotto\tgelateria/gasparotto\t40.7522251\t13.8904976\t2\tcampania\tna\tlacco-ameno\tvia Roma, 22 – Lacco Ameno (NA)\tPremio Gelato e Territorio 2027
+379817\tBarroccino\tgelateria/barroccino\t\t\t1\ttoscana\tfi\tfirenze\tvia della Torre degli Agli, 71 – Firenze (FI)\t
+379818\tThe Rag\tgelateria/the-rag\t40.9202412\t14.8329585\t2\tcampania\tav\tatripalda\tp.zza Umberto I, 3 – Atripalda (AV)\tPremio La novità dell'anno 2027
+379819\tAndrè - Esperienza di Gusto\tgelateria/andre-esperienza-di-gusto\t42.8555853\t13.5758926\t1\tmarche\tap\tascoli-piceno\tvia D?Ancaria, 36 – Ascoli Piceno (AP)\t
+379820\tGelateria Buzzi\tgelateria/gelateria-buzzi\t45.7386773\t7.4654391\t2\tvalle-daosta\tao\tnus\tvia Circonvallazione Sud, 39 – Nus (AO)\t
+379821\tManoRossa\tgelateria/manorossa\t\t\t2\tpiemonte\tcn\talba\tv.lo San Giovanni, 2 – Alba (CN)\t
+379822\tGelateria Albertoandrea\tgelateria/gelateria-albertoandrea\t\t\t2\tpiemonte\tto\tnichelino\tvia Torino, 149 – Nichelino (TO)\t
+379823\tViaTrento Gelato & Caffè\tgelateria/viatrento-gelato-caffe\t\t\t0\tpiemonte\tto\ttorino\tvia Po, 40 – Torino (TO)\t
+379825\tLa Porporata\tgelateria/la-porporata\t\t\t0\tpiemonte\tto\tsan-maurizio-canavese\tCanonico Maffei, 57 – San Maurizio Canavese (TO)\t
+379826\tFattoria Dassogno\tgelateria/fattoria-dassogno\t\t\t2\tlombardia\tlc\trogeno\tv.le Piave, 9 – Rogeno (LC)\t
+379828\tUnika Cremeria\tgelateria/unika-cremeria\t\t\t2\tlombardia\tcr\tcrema\tvia G. Mazzini, 111 – Crema (CR)\t
+379830\tGelateria Pagani\tgelateria/gelateria-pagani\t\t\t1\temilia-romagna\tpc\tpiacenza\tvia Radini – Tedeschi, 74 – Piacenza (PC)\t
+379831\tGelateria San Giorgio\tgelateria/gelateria-san-giorgio\t44.3030238\t9.2093547\t0\tliguria\tge\tportofino\tp.zza Martiri dell'Olivetta, 63 – Portofino (GE)\t
+379832\tNughenè - il gelato\tgelateria/nughene-il-gelato\t\t\t2\tliguria\tge\tbogliasco\tvia G. Mazzini, 159 – Bogliasco (GE)\t
+379833\tLado\tgelateria/lado\t\t\t2\ttrentino-alto-adige\ttn\ttrento\tvia  del Suffragio, 37 – Trento (TN)\t
+379834\tMaso Hubenbauer\tgelateria/maso-hubenbauer\t\t\t1\ttrentino-alto-adige\tbz\tvarna-vahrn\tSchattengasse, 12 – Varna/Vahrn (BZ)\t
+379835\tAntica Latteria dell'Appennino\tgelateria/antica-latteria-dellappennino\t43.22922\t13.17847\t1\tmarche\tmc\tsan-severino-marche\tp.zza del Popolo, 81 – San Severino Marche (MC)\t
+379836\tIdem Congelato\tgelateria/idem-congelato\t44.918968\t10.8077963\t1\temilia-romagna\tre\treggiolo\tv.le XXV Aprile, 9 – Reggiolo (RE)\t
+379837\tAl Polo Gelato Pensato\tgelateria/al-polo-gelato-pensato\t\t\t2\temilia-romagna\tpr\tparma\tvia La Spezia, 14/a – Parma (PR)\t
+379838\tFredo\tgelateria/fredo\t\t\t2\ttoscana\tsi\tpienza\tvia Dogali, 1 – Pienza (SI)\t
+379839\tCremeria Mussoni\tgelateria/cremeria-mussoni\t44.1448593\t12.4664587\t1\temilia-romagna\trn\tbellaria-igea-marina\tvia A. Panzini, 10 – Bellaria-Igea Marina (RN)\t
+379840\tGelateria del Borgo San Rocco\tgelateria/gelateria-del-borgo-san-rocco\t\t\t2\temilia-romagna\tfc\tsavignano-sul-rubicone\tvia G. Matteotti, 87 – Savignano sul Rubicone (FC)\t
+379841\tGelateria Cioccolateria Magnolfi\tgelateria/gelateria-cioccolateria-magnolfi\t43.7816298\t11.2870605\t2\ttoscana\tfi\tfirenze\tv.le Manfredo Fanti, 7h/r – Firenze (FI)\t
+379842\tEle Gelati & Granite\tgelateria/ele-gelati-granite\t\t\t2\ttoscana\tlu\tlucca\tvia San Paolino, 10 – Lucca (LU)\tPremio Gelatiere emergente 2027
+379843\tBalè\tgelateria/bale\t\t\t1\tumbria\tpg\tcastiglione-del-lago\tvia Lungolago 18 – Castiglione del Lago (PG)\t
+379844\tGelateria da Simone\tgelateria/gelateria-da-simone-2\t45.51717800000001\t12.186781900000028\t3\tveneto\tve\tnoale\tp.zza Castello, 53 – Noale (VE)\t
+379845\tGurmandina\tgelateria/gurmandina\t\t\t1\tlombardia\tpv\tpavia\tv.lo San Gregorio, 4 – Pavia (PV)\t
+379846\tLa Carapina\tgelateria/la-carapina\t\t\t1\temilia-romagna\tre\treggio-emilia\tvia Glauco Garlassi, 1 – Reggio Emilia (RE)\t
+379847\tSanto Gelato\tgelateria/santo-gelato\t\t\t2\tabruzzo\tte\tteramo\tvia S. Berardo, 18 – Teramo (TE)\t
+379848\tL' Oasi Gelateria\tgelateria/l-oasi-gelateria\t\t\t2\tabruzzo\tch\tortona\tvia Passeggiata Orientale, 13 – Ortona (CH)\t
+379849\tFutura Gelateria\tgelateria/futura-gelateria\t41.8801633\t12.4760444\t1\tlazio\trm\troma\tp.zza Santa Maria Liberatrice, 31 – Roma (RM)\t
+379850\tOltrè\tgelateria/oltre-3\t\t\t2\tveneto\tve\tportogruaro\tv.le Trieste, 14 – Portogruaro (VE)\t
+379851\tGattogelato\tgelateria/gattogelato\t\t\t1\tveneto\tro\trosolina-mare\tp.zza San Giorgio, 9, – Rosolina Mare (RO)\t
+379852\tGelateria Ricci\tgelateria/gelateria-ricci\t\t\t1\ttoscana\tgr\tfollonica\tv.le Italia, 2c-2d – Follonica (GR)\t
+379853\tLolla Gelato\tgelateria/lolla-gelato\t42.4125282\t12.1186196\t2\tlazio\tvt\tviterbo\tvia C. Cattaneo, 46/o – Viterbo (VT)\tPremio Gelato e Territorio 2027
+379854\tBar Torino\tgelateria/bar-torino\t\t\t0\tsicilia\tme\tmessina\tc.so Cavour, 153 – Messina (ME)\t
+379855\tBar Fiumara Giovanni\tgelateria/bar-fiumara-giovanni\t\t\t0\tsicilia\tme\tvillafranca-tirrena\tvia Antonello da Messina, 22 – Villafranca Tirrena (ME)\t
+379857\tIl Granato\tformaggi/il-granato\t\t\t0\tcampania\tsa\tcapaccio-paestum\ts.s. 18, Via Spinazzo, km 96+500 – Capaccio Paestum (SA)\t
+379858\tDon Peppinu\tgelateria/don-peppinu-2\t37.0625328\t15.2930097\t2\tsicilia\tct\tcatania\tvia Etnea, 18 – Catania (CT)\t
+379859\tLorenzo - Gelato & Dessert\tgelateria/lorenzo-gelato-dessert\t44.53916299999999\t10.812361\t1\temilia-romagna\tmo\tfiorano-modenese\tp.zza Ciro Menotti, 7 – Fiorano Modenese (MO)\t
+379860\tBurrocacao\tgelateria/burrocacao\t44.34541\t11.68564\t1\temilia-romagna\tbo\timola\tvia Gaetano Donizetti, 43 – Imola (BO)\t
+379861\tSorbetteria Busseto\tgelateria/sorbetteria-busseto\t44.9804658\t10.0421275\t1\temilia-romagna\tpr\tbusseto\tvia Roma, 78 – Busseto (PR)\t
+379862\tCorno Gelato by Scaturchio\tgelateria/corno-gelato-by-scaturchio\t\t\t2\tcampania\tna\tnapoli\tvia Portamedina, 25 – Napoli (NA)\t
+379863\tGelatodamare\tgelateria/gelatodamare\t\t\t2\tfriuli-venezia-giulia\tts\ttrieste\tvia G. Foschiatti, 9/a – Trieste (TS)\t
+379864\tSacro Gusto\tgelateria/sacro-gusto\t\t\t1\tpuglia\tba\tbari\tv.le L. Einaudi, 37 – Bari (BA)\t
+379865\tLa Bottega del Gelato\tgelateria/la-bottega-del-gelato-2\t\t\t1\tpuglia\tba\talberobello\tvia Fausto Arturo Cucci, 29 – Alberobello (BA)\t
+379866\tScoop\tgelateria/scoop\t\t\t2\tpuglia\tbt\tcanosa-di-puglia\tp.zza della Repubblica, 20 – Canosa di Puglia (BT)\t
+379867\tDrop\tgelateria/drop\t45.56062\t10.19182\t1\tlombardia\tbs\tbrescia\tTraversa Sesta, 1 – Quartiere G. C. Abba – Brescia (BS)\t
+379868\tFior di Sambuco\tgelateria/fior-di-sambuco\t45.721781\t9.6579078\t1\tlombardia\tbg\tponteranica\tvia Pontesecco, 20 – Ponteranica (BG)\t
+379869\tFrancis\tgelateria/francis\t45.49424339999999\t10.2152647\t2\tlombardia\tbs\tsan-zeno-naviglio\tv.le Sandro Pertini, 21 – San Zeno Naviglio (BS)\t
+379870\tMon Chou-Chou\tpasticceria/mon-chou-chou\t38.034166\t14.0205025\t2\tsicilia\tpa\tcefalu\tvia Giglio, 29 – Cefalù (PA)\t
+379871\tCremes Bureau\tgelateria/cremes-bureau\t\t\t1\tbasilicata\tmt\tmatera\tvia delle Beccherie, 61 – Matera (MT)\t
+379872\tCriollo. Il Bistrot Del Gelato\tgelateria/criollo-il-bistrot-del-gelato\t\t\t1\tlazio\trm\troma\tvia G. Bagnera, 59 – Roma (RM)\t
+379873\tGelateria Dante\tgelateria/gelateria-dante\t\t\t0\tcalabria\tvv\tpizzo\tp.zza della Repubblica, 38 – Pizzo (VV)\t
+379875\tPetali di Neve\tgelateria/petali-di-neve\t\t\t1\tlazio\trm\troma\tvia Baldo degli Ubaldi, 118 – Roma (RM)\t
+379876\tMicama\tgelateria/micama\t\t\t2\tabruzzo\taq\tavezzano\tvia Trieste, 40 – Avezzano (AQ)\t
+379877\tBottega Paradiso\tgelateria/bottega-paradiso\t\t\t1\tcampania\tsa\tnocera-inferiore\tp.zza Amendola, 23 – Nocera Inferiore (SA)\t
+379878\tö Magazín Gelateria\tgelateria/o-magazin-gelateria\t\t\t0\tliguria\tge\tportofino\tCalata Marconi, 32 – Portofino (GE)\t
+379879\tGelato Lab. CaraPina\tgelateria/gelato-lab-carapina\t\t\t1\tcalabria\tcs\tdiamante\tc.so G. Garibaldi, 16 – Diamante (CS)\t
+379880\tFred. Nati per il gelato\tgelateria/fred-nati-per-il-gelato\t\t\t1\tcalabria\tcz\tsellia-marina\tl.mare Ionio – Sellia Marina (CZ)\t
+379881\tPa.Pe.Ro al Glicine\tgelateria/pa-pe-ro-al-glicine\t\t\t0\tsicilia\tme\tleni\tvia Strada Provinciale, 16 – Leni (ME)\t
+379882\tCarola\tgelateria/carola\t\t\t0\tsicilia\tme\tpanarea\tvia via Comunale Mare ? Porto – Panarea (ME)\t
+379883\tDonna Maria\tgelateria/donna-maria\t\t\t2\tcalabria\tvv\ttropea\tc.da Marina Vescovado, 8 – Tropea (VV)\t
+379884\tVaniglia e Pistacchio\tgelateria/vaniglia-e-pistacchio\t\t\t1\tsardegna\tca\tcagliari\tvia Napoli, 30 – Cagliari (CA)\t
+379885\tIntenso\tgelateria/intenso-2\t\t\t1\tsardegna\tca\tcagliari\tp.zza G. Garibaldi, 46 – Cagliari (CA)\t
+379886\tPichi Gelateria Naturale\tgelateria/pichi-gelateria-naturale\t\t\t1\tsardegna\tsu\tiglesias\tvia G. Verdi, 5 – Iglesias (SU)\t
+379887\tAlibrandi La Gelateria\tgelateria/alibrandi-la-gelateria\t39.1466121\t8.307939900000065\t2\tsardegna\tsu\tcarloforte\tvia V. Porcile, 4 – Carloforte (SU)\t
+379888\tOriolos\tgelateria/oriolos\t\t\t2\tsardegna\tss\tperfugas\tvia Mannu, 5 – Perfugas (SS)\t
+379889\tGerbera Gelati Artigianali\tgelateria/gerbera-gelati-artigianali\t\t\t2\tcampania\tce\tcaserta\tvia R. Gasparri, 74 – Caserta (CE)\t
+379890\tEden Bar\tgelateria/eden-bar\t\t\t0\tsicilia\tme\tmessina\tc.so Cavour, 127 – Messina (ME)\t
+379891\tBar Alecci\tgelateria/bar-alecci\t\t\t0\tsicilia\tct\tgravina-di-catania\tvia A. Gramsci, 62 – Gravina di Catania (CT)\t
